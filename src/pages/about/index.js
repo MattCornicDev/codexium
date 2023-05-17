@@ -16,7 +16,7 @@ export const About = () => {
       <Container className="About-header">
         <Helmet>
           <meta charSet="utf-8" />
-          <title> About | {meta.title}</title>
+          <title> MCD | {meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
@@ -37,7 +37,7 @@ export const About = () => {
         </Row>
         <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Travail effectué</h3>
+            <h3 className="color_sec py-4">Expérience</h3>
           </Col>
           <Col lg="7">
             <table className="table caption-top">
@@ -48,6 +48,7 @@ export const About = () => {
                       <th scope="row">{data.jobtitle}</th>
                       <td>{data.where}</td>
                       <td>{data.date}</td>
+                      <td>{data.details}</td>
                     </tr>
                   );
                 })}
