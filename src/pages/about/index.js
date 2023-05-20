@@ -6,6 +6,8 @@ import {
   dataabout,
   meta,
   worktimeline,
+  worktimeline2,
+  diplomes,
   skills,
   services,
 } from "../../content_option";
@@ -31,13 +33,13 @@ export const About = () => {
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <div>
-              <p>{dataabout.aboutme}</p>
+              <pre>{dataabout.aboutme}</pre>
             </div>
           </Col>
         </Row>
         <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Expérience</h3>
+            <h3 className="color_sec py-4">Expériences Dev</h3>
           </Col>
           <Col lg="7">
             <table className="table caption-top">
@@ -49,6 +51,46 @@ export const About = () => {
                       <td>{data.where}</td>
                       <td>{data.date}</td>
                       <td>{data.details}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </Col>
+        </Row>
+        <Row className=" sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4">Autres Expériences</h3>
+          </Col>
+          <Col lg="7">
+            <table className="table caption-top">
+              <tbody>
+                {worktimeline2.map((data, i) => {
+                  return (
+                    <tr key={i}>
+                      <th scope="row">{data.jobtitle}</th>
+                      <td>{data.where}</td>
+                      <td>{data.date}</td>
+                      <td>{data.details}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </Col>
+        </Row>
+        <Row className=" sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4">Diplomes</h3>
+          </Col>
+          <Col lg="7">
+            <table className="table caption-top">
+              <tbody>
+                {diplomes.map((data, i) => {
+                  return (
+                    <tr key={i}>
+                      <th scope="row">{data.title}</th>
+                      <td>{data.description}</td>
                     </tr>
                   );
                 })}

@@ -18,7 +18,17 @@ const introdata = {
 
 const dataabout = {
     title: "À propos de moi",
-    aboutme: "Je suis un développeur d'applications passionné, spécialisé dans les langages JavaScript, Node.js, ReactJS, Swift et PHP Symfony. Avec une solide expérience dans ces technologies, je suis constamment à l'affût des dernières tendances et des meilleures pratiques de développement. Mon parcours professionnel m'a permis de travailler sur divers projets, allant des applications web à celles basées sur mobile, en passant par des jeux vidéo. Actuellement, je suis enthousiasmé par le développement d'un jeu vidéo en C++ avec Unreal Engine, où je peux laisser libre cours à ma créativité et à ma passion pour les jeux interactifs. En tant que sportif, je valorise l'esprit d'équipe, la persévérance et l'engagement. Ces qualités se reflètent également dans mon approche du développement logiciel. Je suis un adepte de l'apprentissage continu, toujours à la recherche de nouvelles opportunités pour améliorer mes compétences et repousser les limites de mes connaissances techniques. En parallèle de ma carrière de développeur, j'ai également pris plaisir à partager mes connaissances en tant que formateur. J'ai eu l'opportunité de guider de nombreux apprenants dans leur apprentissage des langages de programmation que je maîtrise. Cette expérience m'a permis de développer mes compétences en communication et en pédagogie, tout en renforçant ma compréhension approfondie des concepts fondamentaux du développement logiciel. En résumé, je suis un développeur d'applications polyvalent et passionné, prêt à relever de nouveaux défis et à apporter des solutions innovantes. Avec mes compétences variées et mon engagement envers l'excellence technique, je suis déterminé à contribuer au succès de projets ambitieux et à créer des expériences utilisateur exceptionnelles. N'hésitez pas à me contacter pour discuter de vos besoins en développement ou pour explorer des opportunités de collaboration. Je serai ravi de partager mes connaissances et de contribuer à la réalisation de vos projets..",
+    aboutme: `Je suis un développeur d'applications passionné, spécialisé dans les langages\nJavaScript, Node.js, ReactJS, Swift et PHP Symfony. Avec une solide expérience\ndans ces technologies, je suis constamment à l'affût des dernières tendances\net des meilleures pratiques de développement. Mon parcours professionnel m'a\npermis de travailler sur divers projets, allant des applications web à celles\nbasées sur mobile, en passant par des jeux vidéo.
+    
+    Actuellement, je suis enthousiasmé par le développement d'un jeu vidéo en C++\navec Unreal Engine, où je peux laisser libre cours à ma créativité et à ma passion\npour les jeux interactifs.
+    
+    En tant que sportif, je valorise l'esprit d'équipe, la persévérance et l'engagement.\nCes qualités se reflètent également dans mon approche du développement logiciel.
+    
+    Je suis un adepte de l'apprentissage continu, toujours à la recherche de nouvelles\nopportunités pour améliorer mes compétences et repousser les limites de mes connaissances\ntechniques. En parallèle de ma carrière de développeur, j'ai également pris plaisir\n à partager mes connaissances en tant que formateur. J'ai eu l'opportunité de guider\nde nombreux apprenants dans leur apprentissage des langages de programmation\nque je maîtrise. Cette expérience m'a permis de développer mes compétences en\ncommunication et en pédagogie, tout en renforçant ma compréhension approfondie des\nconcepts fondamentaux du développement logiciel.
+    
+    En résumé, je suis un développeur d'applications polyvalent et passionné, prêt\nà relever de nouveaux défis et à apporter des solutions innovantes. Avec mes compétences\nvariées et mon engagement envers l'excellence technique, je suis déterminé à contribuer\nau succès de projets ambitieux et à créer des expériences utilisateur exceptionnelles.
+    
+    N'hésitez pas à me contacter pour discuter de vos besoins en développement ou\npour explorer des opportunités de collaboration. Je serai ravi de partager mes\nconnaissances et de contribuer à la réalisation de vos projets..`,
 };
 const worktimeline = [{
     jobtitle: "Formateur developpeur pour Bac + 2",
@@ -51,6 +61,37 @@ const worktimeline = [{
     details: "Swift UI Kit, Xcode. (L'application a été présenté à l'appStore des Champs Elysées car elle avait fait sensation au milieu d'autres applications)",
 }
 ];
+// Autres Expériences
+const worktimeline2 = [{
+    jobtitle: "Educateur pour le ministère d l'éducation nationale",
+    where: "Abscon, France",
+    date: "2003 - 2005",
+    details: "Educateur pour le ministère d l'éducation nationale",
+},
+{
+    jobtitle: "Gérant 'La Diligence'",
+    where: "Escaudain, France",
+    date: "2005 - 2010",
+    details: "Gérant d'une société de livraison de marchandise La Diligence",
+},
+{
+    jobtitle: "Directeur Commercial chez Refrisol",
+    where: "Lille, France",
+    date: "2010 - 2017",
+    details: "Nous avions pour mission de trouver de nouveau client pour l'achat de briques refractaires dans les pays du golf et le maghreb",
+},
+{
+    jobtitle: "Agent d'exploitation logistique chez Amazon",
+    where: "Douai, France",
+    date: "2018 - 2019",
+    details: "Les tâches principales incluaient la réception et la gestion des stocks, la préparation des commandes, l'emballage et l'expédition des produits, ainsi que la gestion des retours et des remboursements.",
+},
+{
+    jobtitle: "Conseiller municipal",
+    where: "Escaudain, France",
+    date: "2008 - 2020",
+    details: "En tant que conseiller municipal, mes rôles et responsabilités incluaient la participation à diverses commissions telles que l'urbanisme, les travaux, le sport, la communication et la politique de la ville. J'étais également impliqué dans la prise de décisions pour le bien-être de la ville et de ses habitants. En tant que directeur de campagne électorale, j'ai dirigé une équipe pour mener une campagne réussie en utilisant des stratégies efficaces.",
+}];
 
 const skills = [{
     name: "Javascript",
@@ -90,6 +131,23 @@ const skills = [{
 },
 
 ];
+
+const diplomes = [{
+    title: "bac + 2 Informatique",
+    description: "Développeur d'applications web et mobile",
+},
+{
+    title: "bac + 4 Informatique",
+    description: "Développeur d'applications lourdes",
+},
+{
+    title: "Université Polytechnique du hainaut",
+    description: "Droit et sciences politiques",
+},
+{
+    title: "bac Sciences technolighique industriel, génie productique et méca.",
+    description: "Le bac STI (Sciences et Technologies Industrielles) est un baccalauréat technologique qui permet d'acquérir des connaissances et des compétences dans les domaines de l'industrie, de la mécanique, de l'électronique, de l'électrotechnique, de l'informatique, de la chimie, etc. ",
+}]
 
 const services = [{
     title: "Conception UML",
@@ -190,6 +248,8 @@ export {
     dataabout,
     dataportfolio,
     worktimeline,
+    worktimeline2,
+    diplomes,
     skills,
     services,
     introdata,
