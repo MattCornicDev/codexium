@@ -184,43 +184,43 @@ const dataportfolio = [{
     link: "#",
 },
 {
-    img: "https://picsum.photos/400/300/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
+    img: "../images/projet-emat.png",
+    description: "Certificat d'immatriculation.",
     link: "#",
 },
 {
-    img: "https://picsum.photos/400/700/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
+    img: "../images/projet-emat2.png",
+    description: "Certificat d'immatriculation.",
     link: "#",
 },
 
 {
-    img: "https://picsum.photos/400/600/?grayscale",
+    img: "../images/Charlie-suez.png",
     description: "The wisdom of life consists in the elimination of non-essentials.",
     link: "#",
 },
 {
-    img: "https://picsum.photos/400/300/?grayscale",
+    img: "../images/charlie.png",
     description: "The wisdom of life consists in the elimination of non-essentials.",
     link: "#",
 },
 {
-    img: "https://picsum.photos/400/?grayscale",
+    img: "../images/charlie2.png",
     description: "The wisdom of life consists in the elimination of non-essentials.",
     link: "#",
 },
 {
-    img: "https://picsum.photos/400/550/?grayscale",
+    img: "../images/uml.png",
     description: "The wisdom of life consists in the elimination of non-essentials.",
     link: "#",
 },
 {
-    img: "https://picsum.photos/400/?grayscale",
+    img: "../images/bdd.png",
     description: "The wisdom of life consists in the elimination of non-essentials.",
     link: "#",
 },
 {
-    img: "../images/Tim-Cook-Simplon.jpg",
+    img: "../images/timeline-charlie.png",
     description: "The wisdom of life consists in the elimination of non-essentials.",
     link: "#",
 },
