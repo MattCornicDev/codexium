@@ -227,8 +227,8 @@ const dataportfolio = [{
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "glgharib@gmail.com",
-    YOUR_FONE: "06.51.77.46.06",
+    YOUR_EMAIL: "",
+    YOUR_FONE: "",
     description: "Pour une réponse rapide et précise à vos questions. Ensemble, trouvons la solution idéale à vos besoins. Ne perdez plus de temps, contactez-moi dès maintenant ! ",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/

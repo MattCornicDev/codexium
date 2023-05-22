@@ -94,7 +94,7 @@ export const ContactUs = () => {
           <Col lg="5" className="mb-5">
             <h3 className="color_sec py-4">Coordonnés</h3>
             <address>
-              <strong>Email:</strong>{" "}
+              <strong>Envoyer un mail</strong>{" "}
               <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
                 {contactConfig.YOUR_EMAIL}
               </a>
@@ -102,7 +102,7 @@ export const ContactUs = () => {
               <br />
               {contactConfig.hasOwnProperty("YOUR_FONE") ? (
                 <p>
-                  <strong>Tel:</strong> {contactConfig.YOUR_FONE}
+                  <strong>On vous répond dans les plus brefs délais</strong> {contactConfig.YOUR_FONE}
                 </p>
               ) : (
                 ""
