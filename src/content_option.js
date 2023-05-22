@@ -164,8 +164,8 @@ const services = [{
 ];
 
 const dataportfolio = [{
-    img: "https://picsum.photos/400/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
+    img: "/Users/mattcornic/Documents/react-portfolio/public/popidou.jpg",
+    description: "Apple Store Champs Elysées.",
     link: "#",
 },
 {
