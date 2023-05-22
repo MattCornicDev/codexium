@@ -166,62 +166,62 @@ const services = [{
 const dataportfolio = [{
     img: "../images/popidou.jpg",
     description: "Apple Store Champs Elysées.",
-    link: "#",
+    link: "https://twitter.com/simplonco/status/1184043337340411904",
 },
 {
     img: "../images/popidou-appStore.jpeg",
     description: "Présentation de l'application Popidou codé en Swift.",
-    link: "#",
+    link: "https://twitter.com/simplonco/status/1184043337340411904",
 },
 {
     img: "../images/rarib-AppStore.jpeg",
     description: "Equipe du projet Apple Foundation.",
-    link: "#",
+    link: "https://twitter.com/simplonco/status/1184043337340411904",
 },
 {
     img: "../images/Tim-Cook-Simplon.jpg",
     description: "Tim Cook pdg d'Apple inaugurant nos locaux pour le projet Apple Foundation.",
-    link: "#",
+    link: "https://twitter.com/simplonco/status/1184043337340411904",
 },
 {
     img: "../images/projet-emat.png",
     description: "Certificat d'immatriculation.",
-    link: "#",
+    link: "https://github.com/MattCornicDev/eMat",
 },
 {
     img: "../images/projet-emat2.png",
     description: "Certificat d'immatriculation.",
-    link: "#",
+    link: "https://github.com/MattCornicDev/eMat",
 },
 
 {
     img: "../images/Charlie-suez.png",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
+    description: "Projet gestion des équipes pour Suez.",
     link: "#",
 },
 {
     img: "../images/charlie.png",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
+    description: "Projet gestion des équipes pour Suez.",
     link: "#",
 },
 {
     img: "../images/charlie2.png",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
+    description: "Projet gestion des équipes pour Suez.",
     link: "#",
 },
 {
     img: "../images/uml.png",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
+    description: "Projet gestion des équipes pour Suez diagramme d'utilisation et de Class.",
     link: "#",
 },
 {
     img: "../images/bdd.png",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
+    description: "Base de donnée en SQL projet Charlie.",
     link: "#",
 },
 {
     img: "../images/timeline-charlie.png",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
+    description: "Timeline des evolutions des projets pour Charlie.",
     link: "#",
 },
 ];
@@ -232,9 +232,9 @@ const contactConfig = {
     description: "Pour une réponse rapide et précise à vos questions. Ensemble, trouvons la solution idéale à vos besoins. Ne perdez plus de temps, contactez-moi dès maintenant ! ",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_SERVICE_ID: "service_biy0w2n",
+    YOUR_TEMPLATE_ID: "template_49d0lm8",
+    YOUR_USER_ID: "xd6hcsAADdsTCTB_f",
 };
 
 const socialprofils = {
