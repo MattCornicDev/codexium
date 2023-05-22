@@ -164,23 +164,23 @@ const services = [{
 ];
 
 const dataportfolio = [{
-    img: "/Users/mattcornic/Documents/react-portfolio/public/popidou.jpg",
+    img: "../images/popidou.jpg",
     description: "Apple Store Champs Elysées.",
     link: "#",
 },
 {
-    img: "https://picsum.photos/400/800/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
+    img: "../images/popidou-appStore.jpeg",
+    description: "Présentation de l'application Popidou codé en Swift.",
     link: "#",
 },
 {
-    img: "https://picsum.photos/400/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
+    img: "../images/rarib-AppStore.jpeg",
+    description: "Equipe du projet Apple Foundation.",
     link: "#",
 },
 {
-    img: "https://picsum.photos/400/600/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
+    img: "../images/Tim-Cook-Simplon.jpg",
+    description: "Tim Cook pdg d'Apple inaugurant nos locaux pour le projet Apple Foundation.",
     link: "#",
 },
 {
@@ -220,7 +220,7 @@ const dataportfolio = [{
     link: "#",
 },
 {
-    img: "https://picsum.photos/400/700/?grayscale",
+    img: "../images/Tim-Cook-Simplon.jpg",
     description: "The wisdom of life consists in the elimination of non-essentials.",
     link: "#",
 },
