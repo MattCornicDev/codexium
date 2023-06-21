@@ -31,9 +31,14 @@ const dataabout = {
     N'hésitez pas à me contacter pour discuter de vos besoins en développement ou\npour explorer des opportunités de collaboration. Je serai ravi de partager mes\nconnaissances et de contribuer à la réalisation de vos projets..`,
 };
 const worktimeline = [{
-    jobtitle: "Formateur developpeur pour Bac + 2",
+    jobtitle: "Formateur developpeur niveau Bac + 2, M2i",
+    where: "Villeneuve-d'Ascq, France",
+    date: "2023 - Present",
+    details: "HTML, CSS, Bootstrap, VueJS",
+}, {
+    jobtitle: "Formateur developpeur niveau Bac + 2, Greta Grand Hainaut (ministère du travail)",
     where: "Cambrai, France",
-    date: "2022 - Present",
+    date: "2022 - Juin 2023",
     details: "JavaScript, Node JS, React JS, REACT Native, HTML, CSS, Bootstrap, testing",
 },
 {
