@@ -26,7 +26,7 @@ export const Socialicons = (params) => {
         {socialprofils.github && (
           <li>
             <a href={socialprofils.github} target="_blank">
-              <FaGithub style={{ fill: 'black' }} />
+              <FaGithub />
             </a>
           </li>
         )}
@@ -41,20 +41,6 @@ export const Socialicons = (params) => {
           <li>
             <a href={socialprofils.linkedin} target="_blank">
               <FaLinkedin style={{ fill: '#007BB5' }} />
-            </a>
-          </li>
-        )}
-        {socialprofils.youtube && (
-          <li>
-            <a href={socialprofils.youtube} target="_blank">
-              <FaYoutube />
-            </a>
-          </li>
-        )}
-        {socialprofils.twitch && (
-          <li>
-            <a href={socialprofils.twitch} target="_blank">
-              <FaTwitch />
             </a>
           </li>
         )}
