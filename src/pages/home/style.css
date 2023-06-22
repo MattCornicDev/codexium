@@ -81,9 +81,10 @@ section {
 }
 
 .intro_sec .text h1 {
-    font-size: 30px;
-    margin-bottom: 50px;
-    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 300px;
+    font-weight: 700px;
+    margin-right: 50px;
 }
 
 .intro_sec .text h3 {
@@ -93,9 +94,13 @@ section {
 
 .intro_sec .h_bg-image {
     background-size: cover;
-    background-position: center;
+    background-position: right;
     min-height: 700px;
     position: relative;
+}
+
+.description{
+    font-style: italic;
 }
 
 .ac_btn {
