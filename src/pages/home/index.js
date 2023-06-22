@@ -22,8 +22,8 @@ export const Home = () => {
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
               <div className="intro mx-auto">
-                <h2 className="mb-1x">{introdata.title}</h2>
-                <h1 className="fluidz-48 mb-1x">
+                <h1 className="mb-1x">{introdata.title}</h1>
+                <h2 className="fluidz-48 mb-1x">
                   <Typewriter
                     options={{
                       strings: [
@@ -37,8 +37,8 @@ export const Home = () => {
                       deleteSpeed: 10,
                     }}
                   />
-                </h1>
-                <p className="mb-1x">{introdata.description}</p>
+                </h2>
+                <p className="mb-1x description">{introdata.description}</p>
                 <div className="intro_btn-action pb-5">
                   <Link to="/portfolio" className="text_2">
                     <div id="button_p" className="ac_btn btn ">

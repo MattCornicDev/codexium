@@ -5,10 +5,7 @@ import {
   FaTwitter,
   FaFacebookF,
   FaLinkedin,
-  FaYoutube,
-  FaTwitch,
 } from "react-icons/fa";
-import { IconContext } from "react-icons";
 import { socialprofils } from "../../content_option";
 
 export const Socialicons = (params) => {
@@ -23,13 +20,6 @@ export const Socialicons = (params) => {
             </a>
           </li>
         )}
-        {socialprofils.github && (
-          <li>
-            <a href={socialprofils.github} target="_blank">
-              <FaGithub />
-            </a>
-          </li>
-        )}
         {socialprofils.facebook && (
           <li>
             <a href={socialprofils.facebook} target="_blank">
@@ -41,6 +31,13 @@ export const Socialicons = (params) => {
           <li>
             <a href={socialprofils.linkedin} target="_blank">
               <FaLinkedin style={{ fill: '#007BB5' }} />
+            </a>
+          </li>
+        )}
+        {socialprofils.github && (
+          <li>
+            <a href={socialprofils.github} target="_blank">
+              <FaGithub />
             </a>
           </li>
         )}

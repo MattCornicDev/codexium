@@ -1,11 +1,11 @@
 const logotext = "MattCornicDev";
 const meta = {
     title: "Matt Cornic dev",
-    description: "Je suis Rarib LAAMIMAT Developper Full Stack, Je travaille actuellement dans la region Lilloise, France",
+    description: "Rarib LAAMIMAT Developper Full Stack, Je travaille actuellement dans la region Lilloise, France",
 };
 
 const introdata = {
-    title: "Je suis Rarib LAAMIMAT",
+    title: "Rarib LAAMIMAT Developper Full Stack",
     animated: {
         first: "Un algo pour les gouverner tous",
         second: "Un algo pour les trouver",

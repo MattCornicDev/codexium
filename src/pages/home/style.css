@@ -98,6 +98,10 @@ section {
     position: relative;
 }
 
+.description{
+    font-style: italic;
+}
+
 .ac_btn {
     padding: 4px 19px;
     color: var(--secondary-color);
