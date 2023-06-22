@@ -8,37 +8,39 @@ import {
   FaYoutube,
   FaTwitch,
 } from "react-icons/fa";
+import { IconContext } from "react-icons";
 import { socialprofils } from "../../content_option";
 
 export const Socialicons = (params) => {
   return (
     <div className="stick_follow_icon">
+
       <ul>
         {socialprofils.twitter && (
           <li>
             <a href={socialprofils.twitter} target="_blank">
-              <FaTwitter />
+              <FaTwitter style={{ fill: ' #1DA1F2' }} />
             </a>
           </li>
         )}
         {socialprofils.github && (
           <li>
             <a href={socialprofils.github} target="_blank">
-              <FaGithub />
+              <FaGithub style={{ fill: 'black' }} />
             </a>
           </li>
         )}
         {socialprofils.facebook && (
           <li>
             <a href={socialprofils.facebook} target="_blank">
-              <FaFacebookF />
+              <FaFacebookF style={{ fill: '#3B5998' }} />
             </a>
           </li>
         )}
         {socialprofils.linkedin && (
           <li>
             <a href={socialprofils.linkedin} target="_blank">
-              <FaLinkedin />
+              <FaLinkedin style={{ fill: '#007BB5' }} />
             </a>
           </li>
         )}

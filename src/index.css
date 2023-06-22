@@ -9,13 +9,13 @@
 }
 
 [data-theme="light"] {
-    --bg-color: #ffffff;
-    --primary-color: #ffffff;
-    --secondary-color: #000;
-    --text-color: #000;
-    --text-color-2: #000;
-    --text-color-3: rgb(204, 0, 0);
-    --overlay-color: rgb(255 255 255 / 70%);
+    --bg-color: #f8f0e3; /* backgound de la page avec encadrement */
+    --primary-color: #f8f0e3; /* couleur de fond */
+    --secondary-color: #000; /* couleur de fond des boutons */ 
+    --text-color: #000; /* couleur du texte */
+    --text-color-2: #000; /* couleur du texte */
+    --text-color-3: rgb(204, 0, 0); /* couleur de la premiere bille */
+    --overlay-color: rgb(255 255 255 / 70%); /* couleur de l'overlay de la page portfolio */
 }
 
 html,

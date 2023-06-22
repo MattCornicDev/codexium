@@ -5,7 +5,7 @@
     height: 200px;
     position: fixed;
     margin-top: -100px;
-}
+    }
 
 .stick_follow_icon ul {
     list-style: none;
@@ -17,6 +17,7 @@
     width: 1.3em;
     height: 1.3em;
     fill: var(--text-color)
+    
 }
 
 .stick_follow_icon p {
