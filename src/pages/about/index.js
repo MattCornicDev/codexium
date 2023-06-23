@@ -30,9 +30,7 @@ export const About = () => {
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">{dataabout.title}</h3>
-            <div class="box">
-              <div class="cercle"></div>
-            </div>
+
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <div>
@@ -43,9 +41,7 @@ export const About = () => {
         <Row className=" sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Expériences Dev</h3>
-            <div class="box">
-              <div class="cercle"></div>
-            </div>
+
           </Col>
           <Col lg="7">
             <table className="table caption-top">

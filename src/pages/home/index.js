@@ -23,6 +23,11 @@ export const Home = () => {
             <div className="align-self-center ">
               <div className="intro mx-auto">
                 <h1 className="mb-1x">{introdata.title}</h1>
+
+                <div class="box">
+                  <div class="cercle"></div>
+                </div>
+
                 <h2 className="fluidz-48 mb-1x">
                   <Typewriter
                     options={{
