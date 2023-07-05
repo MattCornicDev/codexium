@@ -20,11 +20,29 @@ const Headermain = () => {
           <Link className="navbar-brand nav_ac" to="/">
             {logotext}
           </Link>
+          <div className="menu__container_nav p-3">
+            <ul className="the_menu_nav">
+              <li className="menu_item ">
+                <Link onClick={handleToggle} to="/" className="my-3">Accueil</Link>
+              </li>
+              <li className="menu_item">
+                <Link onClick={handleToggle} to="/portfolio" className="my-3">Portfolio</Link>
+              </li>
+              <li className="menu_item">
+                <Link onClick={handleToggle} to="/about" className="my-3">À propos</Link>
+              </li>
+              <li className="menu_item">
+                <Link onClick={handleToggle} to="/contact" className="my-3">Contact</Link>
+              </li>
+            </ul>
+          </div>
           <div className="d-flex align-items-center">
             <Themetoggle />
             <button className="menu__button  nav_ac" onClick={handleToggle}>
               {!isActive ? <VscClose /> : <VscGrabber />}
             </button>
+
+
 
           </div>
         </div>
