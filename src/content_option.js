@@ -248,6 +248,13 @@ const socialprofils = {
     linkedin: "https://www.linkedin.com/in/rarib-laamimat/",
     twitter: "https://twitter.com",
 };
+
+const articles = [{
+    title: "Docker",
+    description: " Docker est une technologie qui permet aux développeurs de créer des conteneurs légers et portables pour leurs applications. Il offre plusieurs avantages, tels que l'isolation de l'environnement de développement, la portabilité des applications sur différentes machines, la répétabilité des déploiements, la scalabilité et la gestion des versions. Avec Docker, les développeurs peuvent créer des environnements cohérents, partager facilement leurs applications avec d'autres, déployer rapidement leurs applications et gérer efficacement les différentes étapes du cycle de vie d'une application. Docker facilite le développement, la collaboration et le déploiement des applications, tout en offrant une flexibilité et une gestion des ressources optimisée. Lire d'avantage https://cours-formations.web.app/",
+}
+];
+
 export {
     meta,
     dataabout,
@@ -261,4 +268,5 @@ export {
     contactConfig,
     socialprofils,
     logotext,
+    articles
 };
