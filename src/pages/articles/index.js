@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from "react-bootstrap";
-import { articles } from '../../content_option';
+import { articles } from '../../content_articles';
 
 
 export const Articles = () => {

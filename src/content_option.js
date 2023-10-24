@@ -1,11 +1,11 @@
 const logotext = "MattCornicDev";
 const meta = {
     title: "Matt Cornic dev",
-    description: "Rarib LAAMIMAT Developper Full Stack, Je travaille actuellement dans la region Lilloise, France",
+    description: "Rarib LAAMIMAT Développer Full Stack, Je travaille actuellement dans la region Lilloise, France",
 };
 
 const introdata = {
-    title: "Rarib LAAMIMAT Developper Full Stack",
+    title: "Rarib LAAMIMAT Développer Full Stack",
     animated: {
         first: "Un algo pour les gouverner tous",
         second: "Un algo pour les trouver",
@@ -31,9 +31,21 @@ const dataabout = {
     N'hésitez pas à me contacter pour discuter de vos besoins en développement ou\npour explorer des opportunités de collaboration. Je serai ravi de partager mes\nconnaissances et de contribuer à la réalisation de vos projets..`,
 };
 const worktimeline = [{
-    jobtitle: "Formateur developpeur niveau Bac + 2, M2i",
+    jobtitle: "Developpeur React",
+    where: "France",
+    date: "2022 - present",
+    details: "Développement d'une application éducative niveau collège et lycée"
+},
+{
+    jobtitle: "Developpeur React",
+    where: "Benguerir, Maroc",
+    date: "2023 - present",
+    details: "Refonte d'une application web en ReactJS"
+},
+{
+    jobtitle: "Formateur développeur niveau Bac + 2, M2i",
     where: "Villeneuve-d'Ascq, France",
-    date: "2023 - Present",
+    date: "2023 - septembre",
     details: "HTML, CSS, Bootstrap, VueJS",
 }, {
     jobtitle: "Formateur developpeur niveau Bac + 2, Greta Grand Hainaut (ministère du travail)",
@@ -77,7 +89,7 @@ const worktimeline2 = [{
     jobtitle: "Gérant 'La Diligence'",
     where: "Escaudain, France",
     date: "2005 - 2010",
-    details: "Gérant d'une société de livraison de marchandise La Diligence",
+    details: "Gérant d'une société de livraison de marchandise (La Diligence)",
 },
 {
     jobtitle: "Directeur Commercial chez Refrisol",
@@ -169,8 +181,18 @@ const services = [{
 ];
 
 const dataportfolio = [{
+    img: "../images/site-cours.png",
+    description: "Support pour les formations",
+    link: "https://cours-formations.web.app/"
+},
+{
+    img: "../images/background-aom.jpg",
+    description: "Projet AOM.",
+    link: "https://mattcornicdev.github.io/AOM/",
+},
+{
     img: "../images/popidou.jpg",
-    description: "Apple Store Champs Elysées.",
+    description: "Présentation à l'Apple Store des Champs Elysées, de notre projet suite à la selection d'Apple.",
     link: "https://twitter.com/simplonco/status/1184043337340411904",
 },
 {
@@ -190,28 +212,28 @@ const dataportfolio = [{
 },
 {
     img: "../images/projet-emat.png",
-    description: "Certificat d'immatriculation.",
+    description: "Projet Certificat d'immatriculation en NodeJS pour un commercant automobile.",
     link: "https://github.com/MattCornicDev/eMat",
 },
 {
     img: "../images/projet-emat2.png",
-    description: "Certificat d'immatriculation.",
+    description: "Projet Certificat d'immatriculation en NodeJS pour un commercant automobile.",
     link: "https://github.com/MattCornicDev/eMat",
 },
 
 {
     img: "../images/Charlie-suez.png",
-    description: "Projet gestion des équipes pour Suez.",
+    description: "Projet gestion des équipes pour Suez Smart Solution.",
     link: "#",
 },
 {
     img: "../images/charlie.png",
-    description: "Projet gestion des équipes pour Suez.",
+    description: "Projet gestion des équipes pour Suez Smart Solution.",
     link: "#",
 },
 {
     img: "../images/charlie2.png",
-    description: "Projet gestion des équipes pour Suez.",
+    description: "Projet gestion des équipes pour Suez Smart Solution.",
     link: "#",
 },
 {
@@ -221,12 +243,12 @@ const dataportfolio = [{
 },
 {
     img: "../images/bdd.png",
-    description: "Base de donnée en SQL projet Charlie.",
+    description: "Base de donnée en SQL projet Charlie Suez Smart Solution.",
     link: "#",
 },
 {
     img: "../images/timeline-charlie.png",
-    description: "Timeline des evolutions des projets pour Charlie.",
+    description: "Timeline des evolutions des projets pour Charlie Suez Smart Solution.",
     link: "#",
 },
 ];
@@ -249,11 +271,7 @@ const socialprofils = {
     twitter: "https://twitter.com",
 };
 
-const articles = [{
-    title: "Docker",
-    description: " Docker est une technologie qui permet aux développeurs de créer des conteneurs légers et portables pour leurs applications. Il offre plusieurs avantages, tels que l'isolation de l'environnement de développement, la portabilité des applications sur différentes machines, la répétabilité des déploiements, la scalabilité et la gestion des versions. Avec Docker, les développeurs peuvent créer des environnements cohérents, partager facilement leurs applications avec d'autres, déployer rapidement leurs applications et gérer efficacement les différentes étapes du cycle de vie d'une application. Docker facilite le développement, la collaboration et le déploiement des applications, tout en offrant une flexibilité et une gestion des ressources optimisée. Lire d'avantage https://cours-formations.web.app/",
-}
-];
+
 
 export {
     meta,
@@ -268,5 +286,5 @@ export {
     contactConfig,
     socialprofils,
     logotext,
-    articles
+
 };
