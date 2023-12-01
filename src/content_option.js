@@ -31,6 +31,12 @@ const dataabout = {
     N'hésitez pas à me contacter pour discuter de vos besoins en développement ou\npour explorer des opportunités de collaboration. Je serai ravi de partager mes\nconnaissances et de contribuer à la réalisation de vos projets..`,
 };
 const worktimeline = [{
+    jobtitle: "Consultant",
+    where: "Escaudain, France",
+    date: "2019 - présent",
+    détails: "Développement d'une application métier pour AOM Technologies & Services. société d'installation de borne électrique et de fibre optique."
+},
+{
     jobtitle: "Developpeur React",
     where: "France",
     date: "2022 - present",
@@ -150,23 +156,52 @@ const skills = [{
 ];
 
 const diplomes = [{
-    title: "bac + 2 Informatique",
-    description: "Développeur d'applications web et mobile",
+    title: "bac + 4 Informatique",
+    description: "Développeur d'applications dites lourdes."
 },
 {
-    title: "bac + 4 Informatique",
-    description: "Développeur d'applications lourdes",
+    title: "bac + 2 Informatique",
+    description: "Développeur d'applications web et mobile"
 },
 {
     title: "Université Polytechnique du hainaut",
-    description: "Droit et sciences politiques",
+    description: "Droit et sciences politiques"
 },
 {
-    title: "bac Sciences technolighique industriel, génie productique et méca.",
-    description: "Le bac STI (Sciences et Technologies Industrielles) est un baccalauréat technologique qui permet d'acquérir des connaissances et des compétences dans les domaines de l'industrie, de la mécanique, de l'électronique, de l'électrotechnique, de l'informatique, de la chimie, etc. ",
-}]
+    title: "Bac Sciences technologiques Industrielles, génie productique et méca.",
+    description: "Le bac STI (Sciences et Technologies Industrielles) est un baccalauréat technologique qui permet d'acquérir des connaissances et des compétences dans les domaines de l'industrie, de la mécanique, de l'électronique, de l'électrotechnique, de l'informatique, de la chimie, etc."
+},
+]
 
 const services = [{
+    title: "Expertise technique",
+    description: "Evaluation des besoins spécifiques et recommandation des solutions les plus adaptées.",
+},
+{
+    title: "Analyse des besoins",
+    description: "analyse des besoins client. Nous travaillons en étroite collaboration avec les parties prenantes pour comprendre les objectifs commerciaux, les contraintes et les exigences fonctionnelles.",
+},
+{
+    title: "Conception de solutions",
+    description: "Sur la base de l'analyse des besoins, nous créons des solutions logicielles adaptées, en concevant par exemple des architectures logicielles, des bases de données, et en recommandant des approches de développement spécifiques."
+},
+{
+    title: "Conseil stratégique",
+    description: "Conseils stratégiques sur la manière dont la technologie peut être alignée avec les objectifs commerciaux à long terme de l'entreprise."
+  },
+{
+    title: "Formation",
+    description: "Dispense de formations aux équipes internes pour faciliter une transition fluide vers de nouvelles technologies ou méthodologies de développement."
+},
+{
+    title: "Veille technologique",
+    description: "Compte tenu de l'évolution rapide de la technologie, nous restons constamment à jour sur les dernières tendances, langages de programmation et frameworks."
+},
+{
+    title: "Implémentation",
+    description: "Impliqué dans le processus d'implémentation, c'est-à-dire la programmation effective des applications ou des systèmes informatiques. Nous travaillons seul ou en équipe, selon la taille du projet."
+},
+{
     title: "Conception UML",
     description: "Expérience pratique dans la création de diagrammes UML complets, tels que les diagrammes de classe, de séquence et de fonctionnement. Aptitude à traduire les besoins fonctionnels en modèles UML et à faciliter la compréhension et la collaboration au sein des équipes de développement.",
 },
@@ -180,15 +215,22 @@ const services = [{
 },
 ];
 
-const dataportfolio = [{
-    img: "../images/site-cours.png",
-    description: "Support pour les formations",
-    link: "https://cours-formations.web.app/"
-},
+
+const dataportfolio = [
+  {
+    img: "images/...",
+    description: "Projet iOS",
+    link: ""
+  },
 {
     img: "../images/background-aom.jpg",
     description: "Projet AOM.",
-    link: "https://mattcornicdev.github.io/AOM/",
+    link: "https://aom-technologie.github.io/AOM/"
+},
+{
+    img: "../images/site-cours.png",
+    description: "Support pour les formations",
+    link: "https://cours-formations.web.app/"
 },
 {
     img: "../images/popidou.jpg",

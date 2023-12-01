@@ -3,6 +3,7 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
 .menu__button {
     color: var(--text-color);
 }
@@ -249,3 +250,8 @@
     }
     
 }
+.menu__container_nav a {
+  font-size : 0.6rem;
+  font-weight: bold;
+}
+
