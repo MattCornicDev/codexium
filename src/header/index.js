@@ -34,6 +34,9 @@ const Headermain = () => {
               <li className="menu_item">
                 <Link to="/contact" className="my-3">Contact</Link>
               </li>
+              <li className="menu_item">
+                <Link to="/devis" className="my-3">Devis</Link>
+              </li>
             </ul>
           </div>
           <div className="d-flex align-items-center">
@@ -63,6 +66,9 @@ const Headermain = () => {
                   </li>
                   <li className="menu_item">
                     <Link onClick={handleToggle} to="/contact" className="my-3">Contact</Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link onClick={handleToggle} to="/articles" className="my-3">Articles</Link>
                   </li>
                 </ul>
               </div>

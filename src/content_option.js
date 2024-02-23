@@ -1,11 +1,11 @@
 const logotext = "MattCornicDev";
 const meta = {
     title: "Matt Cornic dev",
-    description: "Rarib LAAMIMAT Developper Full Stack, Je travaille actuellement dans la region Lilloise, France",
+    description: "Rarib LAAMIMAT Développer Full Stack, Je travaille actuellement dans la region Lilloise, France",
 };
 
 const introdata = {
-    title: "Rarib LAAMIMAT Developper Full Stack",
+    title: "Rarib LAAMIMAT Développer Full Stack",
     animated: {
         first: "Un algo pour les gouverner tous",
         second: "Un algo pour les trouver",
@@ -31,9 +31,27 @@ const dataabout = {
     N'hésitez pas à me contacter pour discuter de vos besoins en développement ou\npour explorer des opportunités de collaboration. Je serai ravi de partager mes\nconnaissances et de contribuer à la réalisation de vos projets..`,
 };
 const worktimeline = [{
-    jobtitle: "Formateur developpeur niveau Bac + 2, M2i",
+    jobtitle: "Consultant Developpeur Chez AOM Technologies & Services",
+    where: "Haut de France, France",
+    date: "2019 - présent",
+    details: "Développement d'une application métier pour AOM Technologies & Services. Méthode agile, Conception du produit, test unitaires, deployement Firebase. Maintenance."
+},
+{
+    jobtitle: "Developpeur React",
+    where: "France",
+    date: "2022 - present",
+    details: "Développement d'une application éducative niveau collège et lycée"
+},
+{
+    jobtitle: "Developpeur React",
+    where: "Benguerir, Maroc",
+    date: "2023 - present",
+    details: "Refonte d'une application web en ReactJS"
+},
+{
+    jobtitle: "Formateur développeur niveau Bac + 2, M2i",
     where: "Villeneuve-d'Ascq, France",
-    date: "2023 - Present",
+    date: "2023 - septembre",
     details: "HTML, CSS, Bootstrap, VueJS",
 }, {
     jobtitle: "Formateur developpeur niveau Bac + 2, Greta Grand Hainaut (ministère du travail)",
@@ -42,7 +60,7 @@ const worktimeline = [{
     details: "JavaScript, Node JS, React JS, REACT Native, HTML, CSS, Bootstrap, testing",
 },
 {
-    jobtitle: "Suez Smart Solution",
+    jobtitle: "Developpeur chez Suez Smart Solution",
     where: "Paris, Le Pecq et remote",
     date: "2021",
     details: "PHP Symfony 5, Twig, HTML, CSS, JavaScript, SQL, MySQL, Docker, Jenkins, Git, Github, Microsoft Team, Slack",
@@ -63,7 +81,7 @@ const worktimeline = [{
     jobtitle: "Developpement application Popidou",
     where: " Paris, Apple Foundation",
     date: "2018",
-    details: "Swift UI Kit, Xcode. (L'application a été présenté à l'appStore des Champs Elysées car elle avait fait sensation au milieu d'autres applications)",
+    details: "Swift UI Kit, Xcode. (L'application a été présenté à l'appStore des Champs Elysées car elle avait fait sensation au milieu d'autres applications). Lire l'article : https://www.leparisien.fr/seine-saint-denis-93/apple-vient-denicher-les-cracks-du-net-a-aulnay-sous-bois-01-07-2019-8107494.php",
 }
 ];
 // Autres Expériences
@@ -77,7 +95,7 @@ const worktimeline2 = [{
     jobtitle: "Gérant 'La Diligence'",
     where: "Escaudain, France",
     date: "2005 - 2010",
-    details: "Gérant d'une société de livraison de marchandise La Diligence",
+    details: "Gérant d'une société de livraison de marchandise (La Diligence)",
 },
 {
     jobtitle: "Directeur Commercial chez Refrisol",
@@ -138,23 +156,52 @@ const skills = [{
 ];
 
 const diplomes = [{
-    title: "bac + 2 Informatique",
-    description: "Développeur d'applications web et mobile",
+    title: "bac + 4 Informatique",
+    description: "Développeur d'applications dites lourdes."
 },
 {
-    title: "bac + 4 Informatique",
-    description: "Développeur d'applications lourdes",
+    title: "bac + 2 Informatique",
+    description: "Développeur d'applications web et mobile"
 },
 {
     title: "Université Polytechnique du hainaut",
-    description: "Droit et sciences politiques",
+    description: "Droit et sciences politiques"
 },
 {
-    title: "bac Sciences technolighique industriel, génie productique et méca.",
-    description: "Le bac STI (Sciences et Technologies Industrielles) est un baccalauréat technologique qui permet d'acquérir des connaissances et des compétences dans les domaines de l'industrie, de la mécanique, de l'électronique, de l'électrotechnique, de l'informatique, de la chimie, etc. ",
-}]
+    title: "Bac Sciences technologiques Industrielles, génie productique et méca.",
+    description: "Le bac STI (Sciences et Technologies Industrielles) est un baccalauréat technologique qui permet d'acquérir des connaissances et des compétences dans les domaines de l'industrie, de la mécanique, de l'électronique, de l'électrotechnique, de l'informatique, de la chimie, etc."
+},
+]
 
 const services = [{
+    title: "Expertise technique",
+    description: "Evaluation des besoins spécifiques et recommandation des solutions les plus adaptées.",
+},
+{
+    title: "Analyse des besoins",
+    description: "analyse des besoins client. Nous travaillons en étroite collaboration avec les parties prenantes pour comprendre les objectifs commerciaux, les contraintes et les exigences fonctionnelles.",
+},
+{
+    title: "Conception de solutions",
+    description: "Sur la base de l'analyse des besoins, nous créons des solutions logicielles adaptées, en concevant par exemple des architectures logicielles, des bases de données, et en recommandant des approches de développement spécifiques."
+},
+{
+    title: "Conseil stratégique",
+    description: "Conseils stratégiques sur la manière dont la technologie peut être alignée avec les objectifs commerciaux à long terme de l'entreprise."
+  },
+{
+    title: "Formation",
+    description: "Dispense de formations aux équipes internes pour faciliter une transition fluide vers de nouvelles technologies ou méthodologies de développement."
+},
+{
+    title: "Veille technologique",
+    description: "Compte tenu de l'évolution rapide de la technologie, nous restons constamment à jour sur les dernières tendances, langages de programmation et frameworks."
+},
+{
+    title: "Implémentation",
+    description: "Impliqué dans le processus d'implémentation, c'est-à-dire la programmation effective des applications ou des systèmes informatiques. Nous travaillons seul ou en équipe, selon la taille du projet."
+},
+{
     title: "Conception UML",
     description: "Expérience pratique dans la création de diagrammes UML complets, tels que les diagrammes de classe, de séquence et de fonctionnement. Aptitude à traduire les besoins fonctionnels en modèles UML et à faciliter la compréhension et la collaboration au sein des équipes de développement.",
 },
@@ -168,9 +215,26 @@ const services = [{
 },
 ];
 
-const dataportfolio = [{
+
+const dataportfolio = [
+  {
+    img: "images/...",
+    description: "Projet iOS",
+    link: ""
+  },
+{
+    img: "../images/background-aom.jpg",
+    description: "Projet AOM.",
+    link: "https://aom-technologie.github.io/AOM/"
+},
+{
+    img: "../images/site-cours.png",
+    description: "Support pour les formations",
+    link: "https://cours-formations.web.app/"
+},
+{
     img: "../images/popidou.jpg",
-    description: "Apple Store Champs Elysées.",
+    description: "Présentation à l'Apple Store des Champs Elysées, de notre projet suite à la selection d'Apple.",
     link: "https://twitter.com/simplonco/status/1184043337340411904",
 },
 {
@@ -190,28 +254,28 @@ const dataportfolio = [{
 },
 {
     img: "../images/projet-emat.png",
-    description: "Certificat d'immatriculation.",
+    description: "Projet Certificat d'immatriculation en NodeJS pour un commercant automobile.",
     link: "https://github.com/MattCornicDev/eMat",
 },
 {
     img: "../images/projet-emat2.png",
-    description: "Certificat d'immatriculation.",
+    description: "Projet Certificat d'immatriculation en NodeJS pour un commercant automobile.",
     link: "https://github.com/MattCornicDev/eMat",
 },
 
 {
     img: "../images/Charlie-suez.png",
-    description: "Projet gestion des équipes pour Suez.",
+    description: "Projet gestion des équipes pour Suez Smart Solution.",
     link: "#",
 },
 {
     img: "../images/charlie.png",
-    description: "Projet gestion des équipes pour Suez.",
+    description: "Projet gestion des équipes pour Suez Smart Solution.",
     link: "#",
 },
 {
     img: "../images/charlie2.png",
-    description: "Projet gestion des équipes pour Suez.",
+    description: "Projet gestion des équipes pour Suez Smart Solution.",
     link: "#",
 },
 {
@@ -221,12 +285,12 @@ const dataportfolio = [{
 },
 {
     img: "../images/bdd.png",
-    description: "Base de donnée en SQL projet Charlie.",
+    description: "Base de donnée en SQL projet Charlie Suez Smart Solution.",
     link: "#",
 },
 {
     img: "../images/timeline-charlie.png",
-    description: "Timeline des evolutions des projets pour Charlie.",
+    description: "Timeline des evolutions des projets pour Charlie Suez Smart Solution.",
     link: "#",
 },
 ];
@@ -248,6 +312,9 @@ const socialprofils = {
     linkedin: "https://www.linkedin.com/in/rarib-laamimat/",
     twitter: "https://twitter.com",
 };
+
+
+
 export {
     meta,
     dataabout,
@@ -261,4 +328,5 @@ export {
     contactConfig,
     socialprofils,
     logotext,
+
 };

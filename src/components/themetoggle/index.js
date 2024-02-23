@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { WiMoonAltWaningCrescent4 } from "react-icons/wi";
+import './style.css'
 
 
 const Themetoggle = () => {
@@ -9,12 +10,18 @@ const Themetoggle = () => {
   };
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme ); 
+    localStorage.setItem('theme', theme);
   }, [theme]);
   return (
-    <div className="nav_ac" onClick={themetoggle}>
-      <WiMoonAltWaningCrescent4 />
-    </div>
+    <>
+      <label className="label">
+        <div className="toggle" >
+          <input className="toggle-state" type="checkbox" name="check" value="check" onClick={themetoggle} />
+          <div className="indicator"></div>
+        </div>
+      </label>
+    </>
+
   );
 };
 
