@@ -7,7 +7,7 @@ export const Articles = () => {
     return (
         <Container className='Articles mt-5'>
             <Row className="sec_sp">
-                <Col lang="5">
+                <Col lg="5">
                     <h3 className="color_sec py-4">Articles</h3>
                 </Col>
                 <Col lg="7">

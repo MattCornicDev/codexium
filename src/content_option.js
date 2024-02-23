@@ -31,10 +31,10 @@ const dataabout = {
     N'hésitez pas à me contacter pour discuter de vos besoins en développement ou\npour explorer des opportunités de collaboration. Je serai ravi de partager mes\nconnaissances et de contribuer à la réalisation de vos projets..`,
 };
 const worktimeline = [{
-    jobtitle: "Consultant",
-    where: "Escaudain, France",
+    jobtitle: "Consultant Developpeur Chez AOM Technologies & Services",
+    where: "Haut de France, France",
     date: "2019 - présent",
-    détails: "Développement d'une application métier pour AOM Technologies & Services. société d'installation de borne électrique et de fibre optique."
+    details: "Développement d'une application métier pour AOM Technologies & Services. Méthode agile, Conception du produit, test unitaires, deployement Firebase. Maintenance."
 },
 {
     jobtitle: "Developpeur React",
@@ -60,7 +60,7 @@ const worktimeline = [{
     details: "JavaScript, Node JS, React JS, REACT Native, HTML, CSS, Bootstrap, testing",
 },
 {
-    jobtitle: "Suez Smart Solution",
+    jobtitle: "Developpeur chez Suez Smart Solution",
     where: "Paris, Le Pecq et remote",
     date: "2021",
     details: "PHP Symfony 5, Twig, HTML, CSS, JavaScript, SQL, MySQL, Docker, Jenkins, Git, Github, Microsoft Team, Slack",
@@ -81,7 +81,7 @@ const worktimeline = [{
     jobtitle: "Developpement application Popidou",
     where: " Paris, Apple Foundation",
     date: "2018",
-    details: "Swift UI Kit, Xcode. (L'application a été présenté à l'appStore des Champs Elysées car elle avait fait sensation au milieu d'autres applications)",
+    details: "Swift UI Kit, Xcode. (L'application a été présenté à l'appStore des Champs Elysées car elle avait fait sensation au milieu d'autres applications). Lire l'article : https://www.leparisien.fr/seine-saint-denis-93/apple-vient-denicher-les-cracks-du-net-a-aulnay-sous-bois-01-07-2019-8107494.php",
 }
 ];
 // Autres Expériences
