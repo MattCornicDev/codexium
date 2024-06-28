@@ -37,6 +37,9 @@ const Headermain = () => {
               <li className="menu_item">
                 <Link to="/devis" className="my-3">Devis</Link>
               </li>
+              <li className="menu_item">
+                <Link to="/profile" className="my-3">CV</Link>
+              </li>
             </ul>
           </div>
           <div className="d-flex align-items-center">
