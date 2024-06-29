@@ -1,10 +1,28 @@
 // src/pages/profile/Profile.js
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { PDFDownloadLink } from '@react-pdf/renderer';
+import MyPdfDocument from '../../components/pdfDocument/MyPdfDocument';
+
 
 const Profile = () => {
   return (
+
     <Container className="mt-5">
+      {/* Ajouter ici le bouton de téléchargement du PDF */}
+      <Row className="text-center mb-4">
+        <Col>
+          <PDFDownloadLink
+            document={<MyPdfDocument />}
+            fileName="Profile.pdf"
+          >
+            {({ loading }) =>
+              loading ? 'Génération du PDF...' : 'Télécharger le CV en PDF'
+            }
+          </PDFDownloadLink>
+        </Col>
+      </Row>
+
       <Row className="text-center mb-4">
         <Col>
           <h1>Rarib LAAMIMAT</h1>
