@@ -15,7 +15,7 @@ const introdata = {
         fourth: "Et dans le méta les lier"
     },
     description: "Fais un métier que tu aimes et tu ne travailleras pas un seul jour de ta vie",
-    your_img_url: "https://picsum.photos/1440/2560",
+    your_img_url: "https://loremflickr.com/1440/2560/software,code"
 };
 
 const dataabout = {
