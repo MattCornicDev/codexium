@@ -1,11 +1,13 @@
-const logotext = "MattCornicDev";
+import logo_infinicode from "./assets/images/logo-codexium.png";
+
+const logotext = logo_infinicode;
 const meta = {
     title: "Matt Cornic dev",
     description: "Rarib LAAMIMAT Développer Full Stack, Je travaille actuellement dans la region Lilloise, France",
 };
 
 const introdata = {
-    title: "Rarib LAAMIMAT Développer Full Stack",
+    title: "Developper Full Stack",
     animated: {
         first: "Un algo pour les gouverner tous",
         second: "Un algo pour les trouver",
@@ -35,6 +37,12 @@ const worktimeline = [{
     where: "Haut de France, France",
     date: "2019 - présent",
     details: "Développement d'une application métier pour AOM Technologies & Services. Méthode agile, Conception du produit, test unitaires, deployement Firebase. Maintenance."
+},
+{
+    jobtitle: "Consultant Developpeur Chez Raja Athletic Club Next.js",
+    where: "Casablanca, Maroc",    
+    date: "2025",
+    details: "Application visant à renforcer l'engagement des supporters du Raja Club Athletic en leur fournissant une source d'informations centralisée et interactive sur leur club préféré. Elle permet également de promouvoir les activités et les produits associés au club, tout en offrant une expérience utilisateur agréable."
 },
 {
     jobtitle: "Developpeur React",

@@ -173,6 +173,11 @@
     padding: 50px 0;
 }
 
+.navbar-brand img {
+    width: 100px; /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Maintient le ratio d'aspect */
+}
+
 @media (min-width: 992px) {
     .menu__container {
         margin-left: 33.3333%;

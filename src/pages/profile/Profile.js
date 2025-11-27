@@ -34,17 +34,17 @@ const Profile = () => {
       <Row className="mb-5">
         <Col>
           <h3>Présentation</h3>
-          <p className="lead">
-            En qualité de développeur spécialisé dans le déploiement d'applications React JS orientées SaaS, je suis à la recherche d'un poste au sein d'une entreprise évoluant dans ce secteur ou s'y investissant pleinement. Mon objectif est de m'engager dans des projets d'envergure, offrant ainsi l'opportunité d'exhiber et de mettre en exergue mes compétences.
+          <p>
+            Développeur spécialisé dans le déploiement d’applications <strong>React JS</strong> orientées SaaS, je souhaite rejoindre une entreprise investie dans ce domaine afin de contribuer à des projets ambitieux et valoriser pleinement mes compétences.
           </p>
           <p>
-            Je maîtrise React JS, NextJS et Rust, et je suis en quête d'une structure qui intègre ou explore ces technologies. Par ailleurs, je nourris un vif intérêt pour les avancées dans le domaine de la blockchain, telles qu'Ethereum ou d'autres plateformes de contrats intelligents.
+            Je maîtrise <strong>React JS, NextJS et Rust</strong>, et je recherche une structure qui utilise ou explore ces technologies. Mon intérêt se porte également sur les innovations liées à la blockchain, notamment Ethereum et les plateformes de contrats intelligents.
           </p>
           <p>
-            Ma motivation est également nourrie par une culture d'entreprise prônant la coopération, l'innovation et la créativité. Ainsi, je recherche une entreprise offrant des perspectives d'évolution professionnelle et de développement continu, tout en conciliant un équilibre judicieux entre vie professionnelle et vie privée. Les avantages tels que le télétravail ou les plages horaires flexibles revêtent également une importance capitale pour moi.
+            Je suis motivé par une culture d’entreprise fondée sur <strong>la coopération, l’innovation et la créativité</strong>. J’aspire à évoluer dans un environnement offrant des perspectives de progression et de formation continue, tout en préservant un équilibre entre vie professionnelle et personnelle. Les modalités telles que le télétravail ou la flexibilité des horaires constituent pour moi des atouts essentiels.
           </p>
           <p>
-            Dans l'ensemble, mon aspiration est de parfaire mes compétences en me confrontant à de nouvelles technologies, et de m'insérer dans un environnement professionnel garantissant un équilibre harmonieux entre mes engagements professionnels et personnels, ainsi que de meilleures perspectives de développement de carrière.
+            Mon objectif global est de perfectionner mes compétences en explorant de nouvelles technologies et de m’intégrer dans un cadre professionnel stimulant, garantissant à la fois un développement de carrière solide et une harmonie durable entre mes engagements personnels et professionnels.
           </p>
         </Col>
       </Row>
@@ -66,13 +66,28 @@ const Profile = () => {
           <h4>Développeur Full Stack</h4>
           <p><strong>AOM Technologie - Haut de France (59)</strong> | Aout 2020 - aujourd'hui</p>
           <ul>
-            <li>Conception et développement d'une application SaaS : Élaboration et mise en œuvre complète d'une
-              application logicielle en tant que service (SaaS), incluant la définition des fonctionnalités, la conception
+            <li>Conception et développement d'une application : Élaboration et mise en œuvre complète d'une
+              application, incluant la définition des fonctionnalités, la conception
               de l'architecture, et le développement des modules principaux.</li>
             <li>Migration vers une application Next.js : Transition de l'application existante vers une infrastructure
               moderne basée sur Next.js, optimisant ainsi les performances, la scalabilité et l'expérience utilisateur.</li>
             <li>Utilisation des outils Git et GitHub : Gestion efficace du code source et des versions de l'application à
               l'aide de Git pour le contrôle des versions, et GitHub pour la collaboration et l'intégration continue.</li>
+          </ul>
+        </Col>
+      </Row>
+      <Row className="mb-5">
+        <Col>
+          <h4>Développeur Full Stack Next.js</h4>
+          <p><strong>Raja Athletic Club - Casablanca (59)</strong> | Janvier 2025 - aujourd'hui</p>
+          <ul>
+            <li>Application visant à renforcer l'engagement des supporters du Raja Club Athletic en leur fournissant une source d'informations centralisée et interactive sur leur club préféré. Elle permet également de promouvoir les activités et les produits associés au club, tout en offrant une expérience utilisateur agréable. </li>
+              <li>Technologies Utilisées :
+Développée avec React et Next.js, l'application bénéficie d'une architecture moderne permettant un rendu côté serveur
+pour des performances optimales.</li>
+<li> Les composants sont organisés de manière modulaire, facilitant la maintenance et
+l'extension des fonctionnalités. L'application est conçue pour être accessible sur divers appareils, offrant une expérience
+utilisateur fluide tant sur mobile que sur desktop.</li>
           </ul>
         </Col>
       </Row>
