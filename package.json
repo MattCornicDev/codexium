@@ -1,6 +1,6 @@
 {
-    "name": "react-portfolio",
-    "version": "0.1.0",
+    "name": "codexium website",
+    "version": "1.0",
     "private": true,
     "dependencies": {
         "@react-pdf/renderer": "^3.4.4",
