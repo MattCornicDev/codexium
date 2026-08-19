@@ -26,6 +26,9 @@ const Headermain = () => {
                 <Link to="/" className="my-3">Accueil</Link>
               </li>
               <li className="menu_item">
+                <Link to="/packAuditCyber" className="my-3">Pack Audit Cybersécurité</Link>
+              </li>
+              <li className="menu_item">
                 <Link to="/portfolio" className="my-3">Portfolio</Link>
               </li>
               <li className="menu_item">
