@@ -39,7 +39,7 @@ export const PackAuditCyber = () => {
                         <h1 className="display-4 mb-4">Pack Audit Cybersécurité</h1>
                         <p className="lead">
                             Une offre claire, adaptée aux petites entreprises et collectivités,
-                            pour sécuriser vos services numériques et réduire les risques d’attaque.
+                            pour sécuriser vos services numériques et réduire les risques d’attaque..
                         </p>
 
                         <div className="mt-4 d-flex justify-content-center gap-3">
