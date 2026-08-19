@@ -4,29 +4,26 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col, Form } from "react-bootstrap";
 
 export const PackAuditCyber = () => {
-    // -----------------------------
-    // CALCULATEUR D'AUDIT CYBER
-    // -----------------------------
-
     const [postes, setPostes] = useState(0);
     const [logiciels, setLogiciels] = useState(0);
-    const [batiments, setBatiments] = useState(1); // mairie incluse
+    const [batiments, setBatiments] = useState(1);
 
-    // Tarif par poste selon la taille
-    const tarifPoste = postes <= 10 ? 10 : postes <= 30 ? 8 : postes <= 80 ? 6 : postes <= 150 ? 4 : 0;
+    const tarifPoste =
+        postes <= 10 ? 10 :
+            postes <= 30 ? 8 :
+                postes <= 80 ? 6 :
+                    postes <= 150 ? 4 : 0;
 
     const base = 300;
     const totalPostes = postes * tarifPoste;
     const totalLogiciels = logiciels * 20;
-    const totalBatiments = (batiments - 1) * 40; // mairie incluse
-
+    const totalBatiments = (batiments - 1) * 40;
     const total = base + totalPostes + totalLogiciels + totalBatiments;
 
     return (
         <HelmetProvider>
-            <Container className="audit-pack-page">
+            <Container className="audit-pack-page text-body-emphasis">
 
-                {/* SEO */}
                 <Helmet>
                     <meta charSet="utf-8" />
                     <title>Pack Audit Cyber | Audit Cybersécurité</title>
@@ -36,10 +33,11 @@ export const PackAuditCyber = () => {
                 {/* HERO */}
                 <Row className="mb-5 mt-3 pt-md-3 text-center">
                     <Col lg="12">
-                        <h1 className="display-4 mb-4">Pack Audit Cybersécurité</h1>
-                        <p className="lead">
+                        <h1 className="display-4 mb-4 text-body-emphasis">Pack Audit Cybersécurité</h1>
+
+                        <p className="lead text-body-emphasis">
                             Une offre claire, adaptée aux petites entreprises et collectivités,
-                            pour sécuriser vos services numériques et réduire les risques d’attaque..
+                            pour sécuriser vos services numériques et réduire les risques d’attaque.
                         </p>
 
                         <div className="mt-4 d-flex justify-content-center gap-3">
@@ -54,9 +52,9 @@ export const PackAuditCyber = () => {
                 {/* PACKS */}
                 <Row id="packs" className="gy-4 mb-5">
                     <Col lg="4">
-                        <div className="card h-100 shadow-sm">
+                        <div className="card h-100 shadow-sm bg-dark text-light">
                             <div className="card-body">
-                                <h3 className="card-title">Pack Essentiel — 300 €</h3>
+                                <h3 className="card-title text-light">Pack Essentiel — 300 €</h3>
                                 <ul className="mt-3">
                                     <li>Analyse du site web</li>
                                     <li>Vérification messagerie</li>
@@ -70,9 +68,9 @@ export const PackAuditCyber = () => {
                     </Col>
 
                     <Col lg="4">
-                        <div className="card h-100 shadow-sm">
+                        <div className="card h-100 shadow-sm bg-dark text-light">
                             <div className="card-body">
-                                <h3 className="card-title">Pack Standard — 500 €</h3>
+                                <h3 className="card-title text-light">Pack Standard — 500 €</h3>
                                 <ul className="mt-3">
                                     <li>Analyse des postes</li>
                                     <li>Accès internes</li>
@@ -85,9 +83,9 @@ export const PackAuditCyber = () => {
                     </Col>
 
                     <Col lg="4">
-                        <div className="card h-100 shadow-sm border-primary">
+                        <div className="card h-100 shadow-sm bg-dark text-light border-primary">
                             <div className="card-body">
-                                <h3 className="card-title text-primary">Pack Collectivités — 650 €</h3>
+                                <h3 className="card-title text-primary-emphasis">Pack Collectivités — 650 €</h3>
                                 <ul className="mt-3">
                                     <li>Audit site communal</li>
                                     <li>Audit messagerie mairie / CCAS</li>
@@ -103,50 +101,54 @@ export const PackAuditCyber = () => {
                 {/* CALCULATEUR */}
                 <Row id="calcul" className="mb-5">
                     <Col lg="12">
-                        <h2 className="mb-4">Calculer mon audit cybersécurité</h2>
+                        <h2 className="mb-4 text-body-emphasis">Calculer mon audit cybersécurité</h2>
 
                         <Form>
                             <Row className="mb-3">
                                 <Col lg="4">
                                     <Form.Group>
-                                        <Form.Label>Nombre de postes</Form.Label>
+                                        <Form.Label className="text-body-emphasis">Nombre de postes</Form.Label>
                                         <Form.Control
                                             type="number"
                                             min="0"
                                             value={postes}
                                             onChange={(e) => setPostes(Number(e.target.value))}
+                                            className="bg-dark text-light border-secondary"
                                         />
                                     </Form.Group>
                                 </Col>
 
                                 <Col lg="4">
                                     <Form.Group>
-                                        <Form.Label>Logiciels métiers</Form.Label>
+                                        <Form.Label className="text-body-emphasis">Logiciels métiers</Form.Label>
                                         <Form.Control
                                             type="number"
                                             min="0"
                                             value={logiciels}
                                             onChange={(e) => setLogiciels(Number(e.target.value))}
+                                            className="bg-dark text-light border-secondary"
                                         />
                                     </Form.Group>
                                 </Col>
 
                                 <Col lg="4">
                                     <Form.Group>
-                                        <Form.Label>Bâtiments (mairie incluse)</Form.Label>
+                                        <Form.Label className="text-body-emphasis">Bâtiments (mairie incluse)</Form.Label>
                                         <Form.Control
                                             type="number"
                                             min="1"
                                             value={batiments}
                                             onChange={(e) => setBatiments(Number(e.target.value))}
+                                            className="bg-dark text-light border-secondary"
                                         />
                                     </Form.Group>
                                 </Col>
                             </Row>
                         </Form>
 
-                        <div className="p-4 bg-light rounded shadow-sm mt-4">
-                            <h4 className="mb-3">Résultat du calcul</h4>
+                        <div className="p-4 bg-secondary bg-opacity-25 rounded shadow-sm mt-4 text-light">
+                            <h4 className="mb-3 text-light">Résultat du calcul</h4>
+
                             <p><strong>Forfait de base :</strong> 300 €</p>
                             <p><strong>Postes :</strong> {postes} × {tarifPoste} € = {totalPostes} €</p>
                             <p><strong>Logiciels métiers :</strong> {logiciels} × 20 € = {totalLogiciels} €</p>
@@ -154,16 +156,17 @@ export const PackAuditCyber = () => {
 
                             <hr />
 
-                            <h3 className="text-primary">Total : {total} €</h3>
+                            <h3 className="text-primary-emphasis">Total : {total} €</h3>
                         </div>
                     </Col>
                 </Row>
 
                 {/* CTA FINAL */}
-                <Row className="text-center py-5 bg-light rounded">
+                <Row className="text-center py-5 bg-secondary bg-opacity-25 rounded text-light">
                     <Col lg="12">
-                        <h2>Prêt à sécuriser votre organisation ?</h2>
-                        <p className="mt-3">
+                        <h2 className="text-light">Prêt à sécuriser votre organisation ?</h2>
+
+                        <p className="mt-3 text-light">
                             Contactez-nous pour un échange gratuit de 20 minutes afin d’évaluer vos besoins.
                         </p>
 
@@ -171,7 +174,7 @@ export const PackAuditCyber = () => {
                             <a href="mailto:contact@tonsite.fr" className="btn btn-primary">
                                 Demander un audit
                             </a>
-                            <a href="#packs" className="btn btn-outline-secondary">
+                            <a href="#packs" className="btn btn-outline-light">
                                 Voir les packs
                             </a>
                         </div>
