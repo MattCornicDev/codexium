@@ -146,7 +146,7 @@ export const PackAuditCyber = () => {
                             </Row>
                         </Form>
 
-                        <div className="p-4 bg-secondary bg-opacity-25 rounded shadow-sm mt-4 text-light">
+                        <div className="p-4 bg-dark  rounded shadow-sm mt-4 text-light">
                             <h4 className="mb-3 text-light">Résultat du calcul</h4>
 
                             <p><strong>Forfait de base :</strong> 300 €</p>
@@ -162,7 +162,7 @@ export const PackAuditCyber = () => {
                 </Row>
 
                 {/* CTA FINAL */}
-                <Row className="text-center py-5 bg-secondary bg-opacity-25 rounded text-light">
+                <Row className="text-center py-5 bg-dark bg-opacity-5 rounded text-light">
                     <Col lg="12">
                         <h2 className="text-light">Prêt à sécuriser votre organisation ?</h2>
 
@@ -171,7 +171,7 @@ export const PackAuditCyber = () => {
                         </p>
 
                         <div className="mt-4 d-flex justify-content-center gap-3">
-                            <a href="mailto:contact@tonsite.fr" className="btn btn-primary">
+                            <a href="mailto:contact@codexium.fr" className="btn btn-primary">
                                 Demander un audit
                             </a>
                             <a href="#packs" className="btn btn-outline-light">
