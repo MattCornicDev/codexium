@@ -38,7 +38,7 @@ const Profile = () => {
             Développeur spécialisé dans le déploiement d’applications <strong>React JS</strong> orientées SaaS, je souhaite rejoindre une entreprise investie dans ce domaine afin de contribuer à des projets ambitieux et valoriser pleinement mes compétences.
           </p>
           <p>
-            Je maîtrise <strong>React JS, NextJS et Rust</strong>, et je recherche une structure qui utilise ou explore ces technologies. Mon intérêt se porte également sur les innovations liées à la blockchain, notamment Ethereum et les plateformes de contrats intelligents.
+            Je maîtrise <strong>React JS, NextJS, NestJS et Rust</strong>, et je recherche une structure qui utilise ou explore ces technologies. Mon intérêt se porte également sur les innovations liées à la blockchain, notamment Ethereum et les plateformes de contrats intelligents.
           </p>
           <p>
             Je suis motivé par une culture d’entreprise fondée sur <strong>la coopération, l’innovation et la créativité</strong>. J’aspire à évoluer dans un environnement offrant des perspectives de progression et de formation continue, tout en préservant un équilibre entre vie professionnelle et personnelle. Les modalités telles que le télétravail ou la flexibilité des horaires constituent pour moi des atouts essentiels.
@@ -63,6 +63,67 @@ const Profile = () => {
 
       <Row className="mb-5">
         <Col>
+          <h4>Consultant Cybersécurité Freelance</h4>
+          <p><strong>Entreprises & Collectivités – Hauts-de-France (59)</strong> | 2024 - aujourd'hui</p>
+          <ul>
+            <li>
+              Réalisation d’audits de sécurité techniques et organisationnels : analyse des risques,
+              identification des vulnérabilités, évaluation des pratiques internes et recommandations
+              adaptées aux contraintes métiers.
+            </li>
+            <li>
+              Mise en place de politiques de sécurité conformes aux bonnes pratiques (ANSSI, NIS2),
+              incluant la gestion des accès, la protection des données, la sécurisation des environnements
+              cloud et la sensibilisation des équipes.
+            </li>
+            <li>
+              Conduite de tests d’intrusion internes et externes, avec rédaction de rapports détaillés,
+              exploitation contrôlée des failles et accompagnement dans la remédiation.
+            </li>
+            <li>
+              Déploiement de solutions de surveillance et de détection (SIEM, EDR), configuration
+              d’alertes, création de tableaux de bord et amélioration continue des capacités de réponse
+              aux incidents.
+            </li>
+            <li>
+              Accompagnement des DSI et responsables sécurité : préparation aux certifications,
+              mise en conformité, gestion de crise, plan de reprise d’activité et pilotage de la
+              sécurité au quotidien.
+            </li>
+          </ul>
+        </Col>
+      </Row>
+
+
+      <Row className="mb-5">
+        <Col>
+          <h4>Développeur Full Stack</h4>
+          <p><strong>Cabinet Dentaire de l’Ostrevent – Hauts-de-France (59)</strong> | 2024 - aujourd'hui</p>
+          <ul>
+            <li>
+              Développement complet d’une application de gestion pour le Cabinet Dentaire de l’Ostrevent,
+              incluant la définition des fonctionnalités, la conception du produit et la réalisation des modules principaux.
+            </li>
+            <li>
+              Organisation du projet en méthode agile, avec itérations courtes, priorisation des besoins
+              et intégration continue des retours du client.
+            </li>
+            <li>
+              Mise en place de tests unitaires pour garantir la fiabilité du code et la stabilité de l’application.
+            </li>
+            <li>
+              Déploiement de l’application sur Vercel, avec gestion du domaine et configuration DNS via OVH.
+            </li>
+            <li>
+              Maintenance corrective et évolutive assurée tout au long du cycle de vie du projet.
+            </li>
+          </ul>
+        </Col>
+      </Row>
+
+
+      <Row className="mb-5">
+        <Col>
           <h4>Développeur Full Stack</h4>
           <p><strong>AOM Technologie - Haut de France (59)</strong> | Aout 2020 - aujourd'hui</p>
           <ul>
@@ -82,12 +143,12 @@ const Profile = () => {
           <p><strong>Raja Athletic Club - Casablanca (59)</strong> | Janvier 2025 - aujourd'hui</p>
           <ul>
             <li>Application visant à renforcer l'engagement des supporters du Raja Club Athletic en leur fournissant une source d'informations centralisée et interactive sur leur club préféré. Elle permet également de promouvoir les activités et les produits associés au club, tout en offrant une expérience utilisateur agréable. </li>
-              <li>Technologies Utilisées :
-Développée avec React et Next.js, l'application bénéficie d'une architecture moderne permettant un rendu côté serveur
-pour des performances optimales.</li>
-<li> Les composants sont organisés de manière modulaire, facilitant la maintenance et
-l'extension des fonctionnalités. L'application est conçue pour être accessible sur divers appareils, offrant une expérience
-utilisateur fluide tant sur mobile que sur desktop.</li>
+            <li>Technologies Utilisées :
+              Développée avec React et Next.js, l'application bénéficie d'une architecture moderne permettant un rendu côté serveur
+              pour des performances optimales.</li>
+            <li> Les composants sont organisés de manière modulaire, facilitant la maintenance et
+              l'extension des fonctionnalités. L'application est conçue pour être accessible sur divers appareils, offrant une expérience
+              utilisateur fluide tant sur mobile que sur desktop.</li>
           </ul>
         </Col>
       </Row>
@@ -112,7 +173,7 @@ utilisateur fluide tant sur mobile que sur desktop.</li>
               les technologies front-end, incluant HTML pour la structure des pages web, CSS pour le style et la
               présentation, Bootstrap pour le développement réactif et rapide, ainsi que Vue.js pour la création
               d'applications web interactives et dynamiques.</li>
-            <li>Développement de supports pédagogiques : Création de supports de cours, tutoriels, et exercices
+            A            <li>Développement de supports pédagogiques : Création de supports de cours, tutoriels, et exercices
               pratiques pour faciliter l'apprentissage et assurer une compréhension solide des concepts enseignés.</li>
             <li>Accompagnement personnalisé : Suivi individuel des apprenants pour répondre à leurs questions,
               corriger leurs travaux, et les guider dans la réalisation de projets concrets, garantissant ainsi leur

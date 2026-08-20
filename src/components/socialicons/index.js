@@ -13,20 +13,7 @@ export const Socialicons = (params) => {
     <div className="stick_follow_icon">
 
       <ul>
-        {socialprofils.twitter && (
-          <li>
-            <a href={socialprofils.twitter} target="_blank">
-              <FaXTwitter style={{ fill: ' #000' }} />
-            </a>
-          </li>
-        )}
-        {socialprofils.facebook && (
-          <li>
-            <a href={socialprofils.facebook} target="_blank">
-              <FaFacebookF style={{ fill: '#3B5998' }} />
-            </a>
-          </li>
-        )}
+
         {socialprofils.linkedin && (
           <li>
             <a href={socialprofils.linkedin} target="_blank">

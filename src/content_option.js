@@ -20,7 +20,7 @@ const introdata = {
 
 const dataabout = {
     title: "À propos de moi",
-    aboutme: `Je suis un développeur d'applications passionné, spécialisé dans les langages\nJavaScript, Node.js, ReactJS, Swift et PHP Symfony. Avec une solide expérience\ndans ces technologies, je suis constamment à l'affût des dernières tendances\net des meilleures pratiques de développement. Mon parcours professionnel m'a\npermis de travailler sur divers projets, allant des applications web à celles\nbasées sur mobile, en passant par des jeux vidéo.
+    aboutme: `Développeur d'applications, spécialisé en JavaScript, Node.js, ReactJS, Next, nest, Swift et Rust.\nAvec une solide expérience dans ces technologies, je suis constamment à l'affût des dernières tendances\net des meilleures pratiques de développement. Mon parcours professionnel m'a\npermis de travailler sur divers projets, allant des applications web à celles\nbasées sur mobile, en passant par des jeux vidéo.
     
     Actuellement, je suis enthousiasmé par le développement d'un jeu vidéo en C++\navec Unreal Engine, où je peux laisser libre cours à ma créativité et à ma passion\npour les jeux interactifs.
     
@@ -28,9 +28,7 @@ const dataabout = {
     
     Je suis un adepte de l'apprentissage continu, toujours à la recherche de nouvelles\nopportunités pour améliorer mes compétences et repousser les limites de mes connaissances\ntechniques. En parallèle de ma carrière de développeur, j'ai également pris plaisir\n à partager mes connaissances en tant que formateur. J'ai eu l'opportunité de guider\nde nombreux apprenants dans leur apprentissage des langages de programmation\nque je maîtrise. Cette expérience m'a permis de développer mes compétences en\ncommunication et en pédagogie, tout en renforçant ma compréhension approfondie des\nconcepts fondamentaux du développement logiciel.
     
-    En résumé, je suis un développeur d'applications polyvalent et passionné, prêt\nà relever de nouveaux défis et à apporter des solutions innovantes. Avec mes compétences\nvariées et mon engagement envers l'excellence technique, je suis déterminé à contribuer\nau succès de projets ambitieux et à créer des expériences utilisateur exceptionnelles.
-    
-    N'hésitez pas à me contacter pour discuter de vos besoins en développement ou\npour explorer des opportunités de collaboration. Je serai ravi de partager mes\nconnaissances et de contribuer à la réalisation de vos projets..`,
+    En résumé, je suis un développeur d'applications polyvalent et passionné, prêt\nà relever de nouveaux défis et à apporter des solutions innovantes. Avec mes compétences\nvariées et mon engagement envers l'excellence technique, je suis déterminé à contribuer\nau succès de projets ambitieux et à créer des expériences utilisateur exceptionnelles.`,
 };
 const worktimeline = [{
     jobtitle: "Consultant Developpeur Chez AOM Technologies & Services",
@@ -39,8 +37,14 @@ const worktimeline = [{
     details: "Développement d'une application métier pour AOM Technologies & Services. Méthode agile, Conception du produit, test unitaires, deployement Firebase. Maintenance."
 },
 {
+    jobtitle: "Consultant Developpeur Cabinet Dentaire de l'ostrevent",
+    where: "Haut de France, France",
+    date: "2026 - présent",
+    details: "Conception et développement d’une application métier pour le Cabinet Dentaire de l’Ostrevent. Mise en place d’un workflow agile (itérations courtes, feedback continu), architecture front-end optimisée, tests unitaires, CI/CD automatisée et déploiement sur Vercel.Configuration du domaine et des DNS via OVH.Maintenance, optimisation des performances et ajout de nouvelles fonctionnalités selon les besoins du cabinet."
+},
+{
     jobtitle: "Consultant Developpeur Chez Raja Athletic Club Next.js",
-    where: "Casablanca, Maroc",    
+    where: "Casablanca, Maroc",
     date: "2025",
     details: "Application visant à renforcer l'engagement des supporters du Raja Club Athletic en leur fournissant une source d'informations centralisée et interactive sur leur club préféré. Elle permet également de promouvoir les activités et les produits associés au club, tout en offrant une expérience utilisateur agréable."
 },
@@ -196,7 +200,7 @@ const services = [{
 {
     title: "Conseil stratégique",
     description: "Conseils stratégiques sur la manière dont la technologie peut être alignée avec les objectifs commerciaux à long terme de l'entreprise."
-  },
+},
 {
     title: "Formation",
     description: "Dispense de formations aux équipes internes pour faciliter une transition fluide vers de nouvelles technologies ou méthodologies de développement."
@@ -225,82 +229,82 @@ const services = [{
 
 
 const dataportfolio = [
-  {
-    img: "images/...",
-    description: "Projet iOS",
-    link: ""
-  },
-{
-    img: "../images/background-aom.jpg",
-    description: "Projet AOM.",
-    link: "https://aom-technologie.github.io/AOM/"
-},
-{
-    img: "../images/site-cours.png",
-    description: "Support pour les formations",
-    link: "https://cours-formations.web.app/"
-},
-{
-    img: "../images/popidou.jpg",
-    description: "Présentation à l'Apple Store des Champs Elysées, de notre projet suite à la selection d'Apple.",
-    link: "https://twitter.com/simplonco/status/1184043337340411904",
-},
-{
-    img: "../images/popidou-appStore.jpeg",
-    description: "Présentation de l'application Popidou codé en Swift.",
-    link: "https://twitter.com/simplonco/status/1184043337340411904",
-},
-{
-    img: "../images/rarib-AppStore.jpeg",
-    description: "Equipe du projet Apple Foundation.",
-    link: "https://twitter.com/simplonco/status/1184043337340411904",
-},
-{
-    img: "../images/Tim-Cook-Simplon.jpg",
-    description: "Tim Cook pdg d'Apple inaugurant nos locaux pour le projet Apple Foundation.",
-    link: "https://twitter.com/simplonco/status/1184043337340411904",
-},
-{
-    img: "../images/projet-emat.png",
-    description: "Projet Certificat d'immatriculation en NodeJS pour un commercant automobile.",
-    link: "https://github.com/MattCornicDev/eMat",
-},
-{
-    img: "../images/projet-emat2.png",
-    description: "Projet Certificat d'immatriculation en NodeJS pour un commercant automobile.",
-    link: "https://github.com/MattCornicDev/eMat",
-},
+    {
+        img: "images/...",
+        description: "Projet iOS",
+        link: ""
+    },
+    {
+        img: "../images/background-aom.jpg",
+        description: "Projet AOM.",
+        link: "https://aom-technologie.github.io/AOM/"
+    },
+    {
+        img: "../images/site-cours.png",
+        description: "Support pour les formations",
+        link: "https://cours-formations.web.app/"
+    },
+    {
+        img: "../images/popidou.jpg",
+        description: "Présentation à l'Apple Store des Champs Elysées, de notre projet suite à la selection d'Apple.",
+        link: "https://twitter.com/simplonco/status/1184043337340411904",
+    },
+    {
+        img: "../images/popidou-appStore.jpeg",
+        description: "Présentation de l'application Popidou codé en Swift.",
+        link: "https://twitter.com/simplonco/status/1184043337340411904",
+    },
+    {
+        img: "../images/rarib-AppStore.jpeg",
+        description: "Equipe du projet Apple Foundation.",
+        link: "https://twitter.com/simplonco/status/1184043337340411904",
+    },
+    {
+        img: "../images/Tim-Cook-Simplon.jpg",
+        description: "Tim Cook pdg d'Apple inaugurant nos locaux pour le projet Apple Foundation.",
+        link: "https://twitter.com/simplonco/status/1184043337340411904",
+    },
+    {
+        img: "../images/projet-emat.png",
+        description: "Projet Certificat d'immatriculation en NodeJS pour un commercant automobile.",
+        link: "https://github.com/MattCornicDev/eMat",
+    },
+    {
+        img: "../images/projet-emat2.png",
+        description: "Projet Certificat d'immatriculation en NodeJS pour un commercant automobile.",
+        link: "https://github.com/MattCornicDev/eMat",
+    },
 
-{
-    img: "../images/Charlie-suez.png",
-    description: "Projet gestion des équipes pour Suez Smart Solution.",
-    link: "#",
-},
-{
-    img: "../images/charlie.png",
-    description: "Projet gestion des équipes pour Suez Smart Solution.",
-    link: "#",
-},
-{
-    img: "../images/charlie2.png",
-    description: "Projet gestion des équipes pour Suez Smart Solution.",
-    link: "#",
-},
-{
-    img: "../images/uml.png",
-    description: "Projet gestion des équipes pour Suez diagramme d'utilisation et de Class.",
-    link: "#",
-},
-{
-    img: "../images/bdd.png",
-    description: "Base de donnée en SQL projet Charlie Suez Smart Solution.",
-    link: "#",
-},
-{
-    img: "../images/timeline-charlie.png",
-    description: "Timeline des evolutions des projets pour Charlie Suez Smart Solution.",
-    link: "#",
-},
+    {
+        img: "../images/Charlie-suez.png",
+        description: "Projet gestion des équipes pour Suez Smart Solution.",
+        link: "#",
+    },
+    {
+        img: "../images/charlie.png",
+        description: "Projet gestion des équipes pour Suez Smart Solution.",
+        link: "#",
+    },
+    {
+        img: "../images/charlie2.png",
+        description: "Projet gestion des équipes pour Suez Smart Solution.",
+        link: "#",
+    },
+    {
+        img: "../images/uml.png",
+        description: "Projet gestion des équipes pour Suez diagramme d'utilisation et de Class.",
+        link: "#",
+    },
+    {
+        img: "../images/bdd.png",
+        description: "Base de donnée en SQL projet Charlie Suez Smart Solution.",
+        link: "#",
+    },
+    {
+        img: "../images/timeline-charlie.png",
+        description: "Timeline des evolutions des projets pour Charlie Suez Smart Solution.",
+        link: "#",
+    },
 ];
 
 const contactConfig = {

@@ -1,100 +1,62 @@
 import React, { useState } from "react";
-import "./style.css";
-import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
+import { VscGrabber, VscClose } from "react-icons/vsc";
 import { logotext, socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
+import "./style.css";
+
 
 const Headermain = () => {
-  const [isActive, setActive] = useState("false");
+  const [open, setOpen] = useState(false);
 
-  const handleToggle = () => {
-    setActive(!isActive);
-    document.body.classList.toggle("ovhidden");
+  const toggleMenu = () => {
+    setOpen(!open);
+    document.body.classList.toggle("no-scroll");
   };
 
   return (
     <>
-      <header className="fixed-top site__header">
-        <div className="d-flex align-items-center justify-content-between">
-          <Link className="navbar-brand nav_ac" to="/about">
-            <img src={logotext} alt="logo" />
-          </Link>
-          <div className="menu__container_nav p-3">
-            <ul className="the_menu_nav">
-              <li className="menu_item ">
-                <Link to="/" className="my-3">Accueil</Link>
-              </li>
-              <li className="menu_item">
-                <Link to="/packAuditCyber" className="my-3">Pack Audit Cybersécurité</Link>
-              </li>
-              <li className="menu_item">
-                <Link to="/portfolio" className="my-3">Portfolio</Link>
-              </li>
-              <li className="menu_item">
-                <Link to="/about" className="my-3">À propos</Link>
-              </li>
-              <li className="menu_item">
-                <Link to="/contact" className="my-3">Contact</Link>
-              </li>
-              <li className="menu_item">
-                <Link to="/devis" className="my-3">Devis</Link>
-              </li>
-              <li className="menu_item">
-                <Link to="/profile" className="my-3">CV</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="d-flex align-items-center">
-            <Themetoggle />
-            <button className="menu__button  nav_ac" onClick={handleToggle}>
-              {!isActive ? <VscClose /> : <VscGrabber />}
-            </button>
+      <header className="header">
+        <Link className="brand" to="/">
+          <img src={logotext} alt="logo" />
+        </Link>
 
+        <nav className="desktop-nav">
+          <Link to="/">Accueil</Link>
+          <Link to="/packAuditCyber">Pack Audit Cybersécurité</Link>
+          <Link to="/portfolio">Portfolio</Link>
+          <Link to="/about">À propos</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/devis">Devis</Link>
+          <Link to="/profile">CV</Link>
+        </nav>
 
-
-          </div>
-        </div>
-
-        <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
-          <div className="bg__menu h-100">
-            <div className="menu__wrapper">
-              <div className="menu__container p-3">
-                <ul className="the_menu">
-                  <li className="menu_item ">
-                    <Link onClick={handleToggle} to="/" className="my-3">Accueil</Link>
-                  </li>
-                  <li className="menu_item">
-                    <Link onClick={handleToggle} to="/portfolio" className="my-3">Portfolio</Link>
-                  </li>
-                  <li className="menu_item">
-                    <Link onClick={handleToggle} to="/about" className="my-3">À propos</Link>
-                  </li>
-                  <li className="menu_item">
-                    <Link onClick={handleToggle} to="/contact" className="my-3">Contact</Link>
-                  </li>
-                  <li className="menu_item">
-                    <Link onClick={handleToggle} to="/articles" className="my-3">Articles</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
-            <div className="d-flex">
-              <a href={socialprofils.facebook} target="_blank">Facebook</a>
-              <a href={socialprofils.github} target="_blank">Github</a>
-              <a href={socialprofils.twitter} target="_blank">Twitter</a>
-            </div>
-            <p className="copyright m-0">copyright - {new Date().getFullYear()} - {logotext}</p>
-          </div>
+        <div className="actions">
+          <Themetoggle />
+          <button className="menu-btn" onClick={toggleMenu}>
+            {open ? <VscClose /> : <VscGrabber />}
+          </button>
         </div>
       </header>
-      <div className="br-top"></div>
-      <div className="br-bottom"></div>
-      <div className="br-left"></div>
-      <div className="br-right"></div>
 
+      <div className={`mobile-menu ${open ? "open" : ""}`}>
+        <div className="mobile-inner">
+          <ul>
+            <li><Link onClick={toggleMenu} to="/">Accueil</Link></li>
+            <li><Link onClick={toggleMenu} to="/portfolio">Portfolio</Link></li>
+            <li><Link onClick={toggleMenu} to="/about">À propos</Link></li>
+            <li><Link onClick={toggleMenu} to="/contact">Contact</Link></li>
+            <li><Link onClick={toggleMenu} to="/articles">Articles</Link></li>
+          </ul>
+
+          <div className="mobile-footer">
+            <a href={socialprofils.facebook} target="_blank">Facebook</a>
+            <a href={socialprofils.github} target="_blank">Github</a>
+            <a href={socialprofils.twitter} target="_blank">Twitter</a>
+            <p>© {new Date().getFullYear()} - {logotext}</p>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
