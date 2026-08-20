@@ -15,7 +15,7 @@ const introdata = {
         fourth: "Et dans le méta les lier"
     },
     description: "Fais un métier que tu aimes et tu ne travailleras pas un seul jour de ta vie",
-    your_img_url: "https://loremflickr.com/1440/2560/software,code"
+    your_img_url: "https://loremflickr.com/1440/2560/software/",
 };
 
 const dataabout = {
@@ -230,14 +230,14 @@ const services = [{
 
 const dataportfolio = [
     {
-        img: "images/...",
-        description: "Projet iOS",
-        link: ""
+        img: "images/logo-cabinet-dentaire.png",
+        description: "Projet Cabinet Dentaire de l'Ostrevent",
+        link: "https://www.cab-dent-ostrevent.fr/"
     },
     {
-        img: "../images/background-aom.jpg",
+        img: "../images/aom-website.png",
         description: "Projet AOM.",
-        link: "https://aom-technologie.github.io/AOM/"
+        link: "https://www.aomtechnologies.com/"
     },
     {
         img: "../images/site-cours.png",
@@ -320,9 +320,7 @@ const contactConfig = {
 
 const socialprofils = {
     github: "https://github.com/MattCornicDev",
-    facebook: "https://facebook.com",
     linkedin: "https://www.linkedin.com/in/rarib-laamimat/",
-    twitter: "https://twitter.com",
 };
 
 
