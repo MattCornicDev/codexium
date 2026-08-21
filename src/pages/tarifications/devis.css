@@ -43,7 +43,7 @@
     content: "";
     width: 60px;
     height: 4px;
-    background: #007bff;
+    background: #606367;
     display: block;
     margin-top: 8px;
     border-radius: 2px;
@@ -95,7 +95,7 @@
 
 .tarif-item-price {
     font-weight: 700;
-    color: #007bff;
+    color: #097381;
     font-size: 1.05rem;
 }
 
@@ -148,7 +148,7 @@
 
 .calc-price {
     font-weight: 700;
-    color: #007bff;
+    color: #097381;
     font-size: 1rem;
 }
 
@@ -163,7 +163,7 @@
 .calc-total-amount {
     font-size: 2.2rem;
     font-weight: 700;
-    color: #007bff;
+    color: #097381;
     margin-top: 10px;
 }
 h4 {
