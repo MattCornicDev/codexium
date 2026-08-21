@@ -4,7 +4,33 @@ import tarifications from "../../content_tarifications";
 const DevisCalculator = () => {
     const [selected, setSelected] = useState([]);
 
+    const isPackComplet = selected.some(item => item.name === "Application web professionnelle complète");
+
     const toggleItem = (item) => {
+        const isMaintenance = item.name.toLowerCase().includes("maintenance");
+        const isPack = item.name === "Application web professionnelle complète";
+
+        // Si on clique sur Pack complet
+        if (isPack) {
+            // Si déjà sélectionné → on le retire
+            if (isPackComplet) {
+                setSelected([]);
+            } else {
+                // On sélectionne uniquement Pack complet + les maintenances déjà cochées
+                const maintenances = selected.filter(i =>
+                    i.name.toLowerCase().includes("maintenance")
+                );
+                setSelected([item, ...maintenances]);
+            }
+            return;
+        }
+
+        // Si Pack complet est actif, on ne permet que la maintenance
+        if (isPackComplet && !isMaintenance) {
+            return; // On ignore le clic
+        }
+
+        // Logique normale pour les autres items
         if (selected.includes(item)) {
             setSelected(selected.filter((i) => i !== item));
         } else {
@@ -27,19 +53,28 @@ const DevisCalculator = () => {
                 <div key={index} className="calc-section">
                     <h4>{section.category}</h4>
 
-                    {section.details.map((item, idx) => (
-                        <div key={idx} className="calc-item">
-                            <label>
-                                <input
-                                    type="checkbox"
-                                    checked={selected.includes(item)}
-                                    onChange={() => toggleItem(item)}
-                                />
-                                <span className="calc-name">{item.name}</span>
-                                <span className="calc-price">{item.price}</span>
-                            </label>
-                        </div>
-                    ))}
+                    {section.details.map((item, idx) => {
+                        const isMaintenance = item.name.toLowerCase().includes("maintenance");
+                        const isPack = item.name === "Application web professionnelle complète";
+
+                        const disabled =
+                            isPackComplet && !isMaintenance && !isPack;
+
+                        return (
+                            <div key={idx} className={`calc-item ${disabled ? "disabled" : ""}`}>
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        checked={selected.includes(item)}
+                                        disabled={disabled}
+                                        onChange={() => toggleItem(item)}
+                                    />
+                                    <span className="calc-name">{item.name}</span>
+                                    <span className="calc-price">{item.price}</span>
+                                </label>
+                            </div>
+                        );
+                    })}
                 </div>
             ))}
 
