@@ -1,57 +1,136 @@
-.tarif-section {
-    margin-bottom: 30px;
-    padding: 20px;
-    background: #f8f9fa;
-    border-radius: 10px;
-    border-left: 4px solid #007bff;
+/* ============================
+   PAGE STRUCTURE
+============================ */
+.DevisPage {
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 60px;
 }
 
-.tarif-category {
-    font-size: 1.4rem;
+/* ============================
+   HEADER
+============================ */
+.devis-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.devis-header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.devis-header p {
+    font-size: 1.15rem;
+    color: #555;
+    max-width: 700px;
+    margin: 15px auto 0;
+    line-height: 1.6;
+}
+
+/* ============================
+   SECTION TITLES
+============================ */
+.section-title {
+    font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    position: relative;
 }
 
-.tarif-list {
+.section-title::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #007bff;
+    display: block;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+/* ============================
+   TARIFICATION CARDS
+============================ */
+.tarif-card {
+    background: #d8a735;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    border: 1px solid #f1f1f1;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tarif-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+}
+
+.tarif-card-title {
+    font-size: 1.45rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.tarif-card-list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-.tarif-item {
-    margin-bottom: 15px;
+.tarif-card-item {
+    margin-bottom: 22px;
 }
 
-.tarif-item strong {
-    font-size: 1.1rem;
+.tarif-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.tarif-description {
-    margin: 5px 0;
-    color: #555;
+.tarif-item-name {
+    font-weight: 600;
+    font-size: 1.05rem;
 }
 
-.tarif-price {
-    display: inline-block;
-    margin-top: 5px;
-    font-weight: bold;
+.tarif-item-price {
+    font-weight: 700;
     color: #007bff;
+    font-size: 1.05rem;
 }
 
+.tarif-item-description {
+    margin-top: 6px;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* ============================
+   CALCULATOR
+============================ */
 .calculator {
-    padding: 25px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 30px;
+    background: #eabf5b;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    border: 1px solid #f1f1f1;
+    margin-top: 20px;
 }
 
 .calc-section {
-    margin-bottom: 25px;
-    padding-bottom: 10px;
+    margin-bottom: 28px;
+    padding-bottom: 12px;
     border-bottom: 1px solid #e5e5e5;
 }
 
 .calc-item {
-    margin: 10px 0;
+    margin: 12px 0;
+}
+
+.calc-item.disabled {
+    opacity: 0.35;
+    pointer-events: none;
 }
 
 .calc-item label {
@@ -64,23 +143,29 @@
 .calc-name {
     font-weight: 500;
     margin-left: 10px;
+    font-size: 1rem;
 }
 
 .calc-price {
-    font-weight: bold;
+    font-weight: 700;
     color: #007bff;
+    font-size: 1rem;
 }
 
 .calc-total {
-    margin-top: 30px;
-    padding: 20px;
+    margin-top: 35px;
+    padding: 25px;
     background: #f8f9fa;
-    border-radius: 10px;
+    border-radius: 12px;
     text-align: center;
 }
 
 .calc-total-amount {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 700;
     color: #007bff;
+    margin-top: 10px;
+}
+h4 {
+    color: #333;
 }
