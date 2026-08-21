@@ -9,7 +9,7 @@ const Profile = () => {
   return (
 
     <Container className="mt-5">
-      {/* Ajouter ici le bouton de téléchargement du PDF */}
+      {/* Ajouter ici le bouton de téléchargement du PDF 
       <Row className="text-center mb-4">
         <Col>
           <PDFDownloadLink
@@ -22,7 +22,7 @@ const Profile = () => {
           </PDFDownloadLink>
         </Col>
       </Row>
-
+*/}
       <Row className="text-center mb-4">
         <Col>
           <h1>Rarib LAAMIMAT</h1>

@@ -1,38 +1,65 @@
-### Description
+# Codexium — Plateforme & Services Numériques Professionnels
 
-A simple portfolio template for developer/designers built with React. 
+Codexium est une entreprise spécialisée dans le développement web, l’ingénierie logicielle,
+l’audit cybersécurité, l’automatisation, et la création de solutions numériques sur mesure.
+Ce dépôt contient le code source du site officiel Codexium, développé et maintenu par
+Matt Cornic.
 
-### [live preview](https://ubaimutl.github.io/react-portfolio/)
+Ce site présente l’identité de Codexium, ses services, ses compétences, ses projets, ainsi
+que les solutions professionnelles proposées aux entreprises, collectivités et organisations.
 
-[![react portfoiio](src/assets/images/react%20portfolio%20gif.gif)](https://ubaimutl.github.io/react-portfolio/)
+---
 
-### Features
+## 🧭 Vision & Mission
 
-- Fully Responsive
-- Multi-Page Layout
-- Contact Form With EmailJs
-- React-Bootstrap
-- Edit Content From One Place
+Codexium a pour objectif d’offrir des solutions numériques modernes, performantes et
+hautement sécurisées.  
+Notre mission : accompagner les entreprises dans la conception, l’optimisation et la
+protection de leurs systèmes numériques.
 
-### Setup
+---
 
-Get the code
+## 🚀 Fonctionnalités du site
 
-<pre>git clone https://github.com/ubaimutl/react-portfolio.git</pre>
- 
-Install required dependencies
+- Interface professionnelle et responsive  
+- Pages dédiées : Accueil, Profil, Portfolio, Tarifications, Audit Cybersécurité  
+- Génération automatique de CV PDF  
+- Animations fluides et transitions modernes  
+- Architecture React optimisée  
+- Contenu centralisé et facilement administrable  
+- Intégration de composants réutilisables  
+- Structure pensée pour un usage professionnel et évolutif  
 
-<pre>yarn install</pre>
+---
+
+## 🗂️ Structure du projet
 
 
-Start the server
+---
 
-<pre>yarn start</pre>
+## 🔒 Licence & Propriété
 
-### More
+Ce projet est soumis à une **licence propriétaire Codexium**.  
+Aucune partie du code, du design, des ressources ou de la structure du projet ne peut être :
 
-Modify pages content in  `src/content_option.js`.
+- copiée  
+- modifiée  
+- redistribuée  
+- publiée  
+- intégrée dans un autre logiciel  
+- exploitée commercialement  
 
-### Thanks
+sans l’autorisation écrite de **Matt Cornic — Codexium**.
 
-If you like this portfolio template don't forget give it a ⭐ 
+Toute violation pourra entraîner des poursuites conformément aux lois en vigueur.
+
+---
+
+## 📬 Contact Professionnel
+
+Pour toute demande commerciale, technique ou partenariat :
+
+**Matt Cornic — Codexium**  
+📧 contact@codexium.fr  
+🌐 https://codexium.fr
+

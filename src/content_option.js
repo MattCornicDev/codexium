@@ -7,7 +7,7 @@ const meta = {
 };
 
 const introdata = {
-    title: "Developper Full Stack",
+    title: "Développement Web & Cybersécurité",
     animated: {
         first: "Un algo pour les gouverner tous",
         second: "Un algo pour les trouver",

@@ -1,23 +1,72 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# ============================================================
+# Codexium — Gitignore Professionnel
+# Projet propriétaire — Ne pas modifier sans autorisation
+# ============================================================
 
-# dependencies
-/node_modules
-/.pnp
+# -----------------------------
+# Dépendances & gestionnaires
+# -----------------------------
+node_modules/
+.pnp/
 .pnp.js
 
-# testing
-/coverage
+# -----------------------------
+# Build & production
+# -----------------------------
+build/
+dist/
+.cache/
+.temp/
 
-# production
-/build
-
-# misc
-.DS_Store
+# -----------------------------
+# Environnements & secrets
+# -----------------------------
+.env
 .env.local
+.env.development
 .env.development.local
-.env.test.local
+.env.production
 .env.production.local
-*.eslintcache
+.env.test
+.env.test.local
+
+# -----------------------------
+# Logs & diagnostics
+# -----------------------------
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.log
+
+# -----------------------------
+# Systèmes & OS
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# IDE & éditeurs
+# -----------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -----------------------------
+# Tests & couverture
+# -----------------------------
+coverage/
+
+# -----------------------------
+# Assets générés automatiquement
+# -----------------------------
+*.cache
+*.tmp
+
+# -----------------------------
+# Fichiers propriétaires Codexium
+# (ne jamais versionner)
+# -----------------------------
+/private/
+/confidential/
+/internal_docs/
