@@ -235,9 +235,9 @@ const dataportfolio = [
         link: "https://www.cab-dent-ostrevent.fr/"
     },
     {
-        img: "../images/aom-website.png",
-        description: "Projet AOM.",
-        link: "https://www.aomtechnologies.com/"
+        img: "../images/rarib-AppStore.jpeg",
+        description: "Equipe du projet Apple Foundation.",
+        link: "https://twitter.com/simplonco/status/1184043337340411904",
     },
     {
         img: "../images/site-cours.png",
@@ -255,9 +255,9 @@ const dataportfolio = [
         link: "https://twitter.com/simplonco/status/1184043337340411904",
     },
     {
-        img: "../images/rarib-AppStore.jpeg",
-        description: "Equipe du projet Apple Foundation.",
-        link: "https://twitter.com/simplonco/status/1184043337340411904",
+        img: "../images/aom-website.png",
+        description: "Projet AOM.",
+        link: "https://www.aomtechnologies.com/"
     },
     {
         img: "../images/Tim-Cook-Simplon.jpg",
