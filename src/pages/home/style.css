@@ -161,6 +161,12 @@ section.home {
   gap: 20px;
 }
 
+.intro_btn-action a,
+.intro_btn-action a:hover,
+.intro_btn-action a:focus {
+  text-decoration: none;
+}
+
 .ac_btn {
   padding: 8px 22px;
   color: #060606;
@@ -168,6 +174,7 @@ section.home {
   background: transparent;
   cursor: pointer;
   transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  text-decoration: none;
 }
 
 .ac_btn:hover {

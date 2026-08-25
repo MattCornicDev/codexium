@@ -1,5 +1,20 @@
+:root {
+    --about-blue: #305587;
+    --about-gold: #EAA438;
+}
+
 .sec_sp {
     margin-bottom: calc(3rem + 5.128vw)
+}
+
+.About-header {
+    padding-top: 10rem;
+}
+
+@media (max-width: 576px) {
+    .About-header {
+        padding-top: 2rem;
+    }
 }
 
 .table td,
@@ -29,7 +44,7 @@
 .experience-card {
     position: relative;
     padding: 1.25rem 1.5rem;
-    border-left: 3px solid var(--text-color-3);
+    border-left: 3px solid var(--about-gold);
     background: color-mix(in srgb, var(--text-color) 5%, transparent);
     transition: transform 0.25s ease, background-color 0.25s ease;
 }
@@ -54,7 +69,7 @@
 
 .experience-card__topline span {
     flex: 0 0 auto;
-    color: var(--text-color-3);
+    color: var(--about-gold);
     font-size: 0.85rem;
     font-weight: 700;
     white-space: nowrap;
@@ -118,13 +133,13 @@
 
 .progress .progress-bar {
     height: 100%;
-    background: var(--text-color-3);
+    background: var(--about-gold);
     animation: animate-positive 2s;
     opacity: 0.9;
 }
 
 .progress .progress-value {
-    color: var(--text-color-3);
+    color: var(--about-gold);
     font-size: 0.9rem;
     font-weight: bold;
     white-space: nowrap;

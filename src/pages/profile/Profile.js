@@ -3,14 +3,15 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import MyPdfDocument from '../../components/pdfDocument/MyPdfDocument';
+import './profile.css';
 
 
 const Profile = () => {
   return (
 
-    <Container className="mt-5">
+    <Container className="profile-page mt-5">
       {/* Ajouter ici le bouton de téléchargement du PDF 
-      <Row className="text-center mb-4">
+      <Row className="profile-hero text-center mb-4">
         <Col>
           <PDFDownloadLink
             document={<MyPdfDocument />}
