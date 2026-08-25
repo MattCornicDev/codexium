@@ -1,4 +1,4 @@
-d/* Empêche le scroll quand le menu est ouvert */
+/* Empêche le scroll quand le menu est ouvert */
 .no-scroll {
   overflow: hidden;
 }

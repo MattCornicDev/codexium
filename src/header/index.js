@@ -16,7 +16,7 @@ const Headermain = () => {
 
   return (
     <>
-      <header className="header">
+      <header className="header fixed-top">
         <Link className="brand" to="/">
           <img src={logotext} alt="logo" />
         </Link>

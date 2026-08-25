@@ -3,6 +3,7 @@
 section.home {
   width: 100%;
   height: 100vh;
+  margin-top: -60px;
   position: relative;
   display: flex;
   align-items: stretch;
@@ -12,8 +13,7 @@ section.home {
 /* Conteneur principal */
 .intro_sec {
   display: flex;
-  height: calc(100vh - 60px);
-  margin-top: 60px; /* header fixe */
+  height: 100vh;
   width: 100%;
 }
 
