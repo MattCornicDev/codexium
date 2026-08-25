@@ -2,8 +2,8 @@ import logo_infinicode from "./assets/images/logo-codexium.png";
 
 const logotext = logo_infinicode;
 const meta = {
-    title: "Matt Cornic dev",
-    description: "Rarib LAAMIMAT Développer Full Stack, Je travaille actuellement dans la region Lilloise, France",
+    title: "Rarib LAAMIMAT – Développeur Full Stack | React • Next.js • SaaS & Cybersecurity Consultant",
+    description: "Développeur Full Stack spécialisé en React, Next.js et SaaS. Basé dans la région Lilloise, je conçois des applications web modernes, performantes et scalables.",
 };
 
 const introdata = {
