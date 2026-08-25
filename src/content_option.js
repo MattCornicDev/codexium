@@ -2,8 +2,8 @@ import logo_infinicode from "./assets/images/logo-codexium.png";
 
 const logotext = logo_infinicode;
 const meta = {
-    title: "Rarib LAAMIMAT – Développeur Full Stack | React • Next.js • SaaS & Cybersecurity Consultant",
-    description: "Développeur Full Stack spécialisé en React, Next.js et SaaS. Basé dans la région Lilloise, je conçois des applications web modernes, performantes et scalables.",
+    title: "Rarib LAAMIMAT – Développeur Full Stack Lille et Valenciennes",
+    description: "Développeur Full Stack spécialisé en React, Next.js, SaaS et cybersécurité à Lille, Valenciennes et près de la Belgique.",
 };
 
 const introdata = {

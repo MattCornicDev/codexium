@@ -11,8 +11,11 @@ export const Home = () => {
       <section id="home" className="home">
         <Helmet>
           <meta charSet="utf-8" />
-          <title> {meta.title}</title>
-          <meta name="description" content={meta.description} />
+          <title>Développeur Full Stack Lille et Valenciennes | Rarib Laamimat</title>
+          <meta
+            name="description"
+            content="Développeur Full Stack à Lille, Valenciennes et près de la Belgique, spécialisé en React, Next.js, SaaS et cybersécurité."
+          />
         </Helmet>
         <div className="intro_sec d-block d-lg-flex align-items-center ">
           <div
