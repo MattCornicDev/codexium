@@ -82,16 +82,16 @@ section.home {
 @keyframes boxMagic {
   from {
     box-shadow:
-      0 0 0 #feac5e,
+      0 0 0 #EAA438,
       0 0 0 #c779d0,
-      0 0 0 #4bc0c8,
+      0 0 0 #305587,
       0 0 0 #42db75;
   }
   to {
     box-shadow:
-      0 -10px 0 #feac5e,
+      0 -10px 0 #EAA438,
       -10px 0 0 #c779d0,
-      0 10px 0 #4bc0c8,
+      0 10px 0 #305587,
       10px 0 0 #42db75;
   }
 }
@@ -115,7 +115,7 @@ section.home {
   padding: 4px 19px;
   color: #060606; /* texte vert clair */
   position: relative;
-  border: 2px solid #e410ef; /* bordure vert clair */
+  border: 2px solid #305587; /* bordure vert clair */
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   cursor: pointer;
@@ -126,8 +126,8 @@ section.home {
 
 /* Hover Codexium */
 .ac_btn:hover {
-  box-shadow: 8px 8px 0px #e362b1, -8px -8px 0px #cb098a; /* ombre vert foncé */
+  box-shadow: 8px 8px 0px #EAA438, -8px -8px 0px #ebb057; /* ombre vert foncé */
   color: #ffffff; /* texte blanc au hover */
-  background: #f2d752; /* fond vert clair au hover */
-  border-color: #8b6902; /* bordure vert foncé au hover */
+  background: #305587; /* fond vert clair au hover */
+  border-color: #EAA438; /* bordure vert foncé au hover */
 }
