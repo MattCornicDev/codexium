@@ -28,7 +28,7 @@ const Profile = () => {
         <Col>
           <h1>Rarib LAAMIMAT</h1>
           <h2 className="text-muted">Développeur Full Stack</h2>
-          <p>Paris (75) | glgharib@gmail.com | +33 6 79 57 04 98</p>
+          <p>Lille, Valenciennes (59) | glgharib@gmail.com | +33 6 79 57 04 98</p>
         </Col>
       </Row>
 
