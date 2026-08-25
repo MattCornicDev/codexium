@@ -33,20 +33,30 @@ const Headermain = () => {
 
         <div className="actions">
           <Themetoggle />
-          <button className="menu-btn" onClick={toggleMenu}>
+          <button
+            className={`menu-btn ${open ? "open" : ""}`}
+            onClick={toggleMenu}
+            type="button"
+            aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+          >
             {open ? <VscClose /> : <VscGrabber />}
           </button>
         </div>
       </header>
 
-      <div className={`mobile-menu ${open ? "open" : ""}`}>
+      <div id="mobile-menu" className={`mobile-menu ${open ? "open" : ""}`}>
         <div className="mobile-inner">
           <ul>
             <li><Link onClick={toggleMenu} to="/">Accueil</Link></li>
+            <li><Link onClick={toggleMenu} to="/packAuditCyber">Pack Audit Cybersécurité</Link></li>
             <li><Link onClick={toggleMenu} to="/portfolio">Portfolio</Link></li>
             <li><Link onClick={toggleMenu} to="/about">À propos</Link></li>
             <li><Link onClick={toggleMenu} to="/contact">Contact</Link></li>
             <li><Link onClick={toggleMenu} to="/articles">Articles</Link></li>
+            <li><Link onClick={toggleMenu} to="/devis">Devis</Link></li>
+            <li><Link onClick={toggleMenu} to="/profile">CV</Link></li>
           </ul>
 
           <div className="mobile-footer">

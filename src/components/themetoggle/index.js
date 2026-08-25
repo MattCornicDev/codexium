@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { WiMoonAltWaningCrescent4 } from "react-icons/wi";
 import './style.css'
 
 
@@ -14,9 +13,16 @@ const Themetoggle = () => {
   }, [theme]);
   return (
     <>
-      <label className="label">
-        <div className="toggle" >
-          <input className="toggle-state" type="checkbox" name="check" value="check" onClick={themetoggle} />
+      <label className="label" aria-label="Changer de thème">
+        <div className="toggle">
+          <input
+            className="toggle-state"
+            type="checkbox"
+            name="theme"
+            checked={theme === "dark"}
+            onChange={themetoggle}
+            aria-label="Activer le mode sombre"
+          />
           <div className="indicator"></div>
         </div>
       </label>

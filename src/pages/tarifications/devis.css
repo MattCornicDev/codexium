@@ -1,75 +1,77 @@
-/* ============================
-   PAGE STRUCTURE
-============================ */
+:root {
+    --tarif-blue: #305587;
+    --tarif-gold: #EAA438;
+    --tarif-ink: #17263d;
+}
+
 .DevisPage {
+    width: 100%;
     max-width: 1200px;
     margin: auto;
     padding-bottom: 60px;
+    box-sizing: border-box;
 }
 
-/* ============================
-   HEADER
-============================ */
 .devis-header {
     text-align: center;
-    margin-bottom: 50px;
+    margin: 3rem auto 4rem;
+    max-width: 850px;
 }
 
 .devis-header h1 {
     font-size: 2.8rem;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    color: var(--tarif-blue);
 }
 
 .devis-header p {
     font-size: 1.15rem;
-    color: #555;
+    color: var(--text-color);
     max-width: 700px;
     margin: 15px auto 0;
     line-height: 1.6;
+    opacity: 0.75;
 }
 
-/* ============================
-   SECTION TITLES
-============================ */
 .section-title {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 25px;
     position: relative;
+    color: var(--tarif-blue);
 }
 
 .section-title::after {
     content: "";
-    width: 60px;
-    height: 4px;
-    background: #606367;
+    width: 4rem;
+    height: 0.25rem;
+    background: var(--tarif-gold);
     display: block;
     margin-top: 8px;
-    border-radius: 2px;
+    border-radius: 999px;
 }
 
-/* ============================
-   TARIFICATION CARDS
-============================ */
 .tarif-card {
-    background: #d8a735;
-    border-radius: 14px;
+    height: 100%;
+    box-sizing: border-box;
+    background: var(--tarif-blue);
+    border: 1px solid rgba(234, 164, 56, 0.55);
+    border-radius: 8px;
     padding: 28px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
-    border: 1px solid #f1f1f1;
+    box-shadow: 6px 6px 0 var(--tarif-gold);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .tarif-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+    transform: translateY(-4px);
+    box-shadow: 10px 10px 0 var(--tarif-gold);
 }
 
 .tarif-card-title {
     font-size: 1.45rem;
     font-weight: 600;
     margin-bottom: 18px;
+    color: var(--tarif-gold);
 }
 
 .tarif-card-list {
@@ -80,48 +82,69 @@
 
 .tarif-card-item {
     margin-bottom: 22px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tarif-card-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
 }
 
 .tarif-item-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 
 .tarif-item-name {
+    min-width: 0;
     font-weight: 600;
     font-size: 1.05rem;
+    color: #fff;
+    overflow-wrap: anywhere;
 }
 
 .tarif-item-price {
     font-weight: 700;
-    color: #097381;
+    color: var(--tarif-gold);
     font-size: 1.05rem;
+    white-space: nowrap;
 }
 
 .tarif-item-description {
     margin-top: 6px;
-    color: #666;
+    color: rgba(255, 255, 255, 0.78);
     font-size: 0.95rem;
     line-height: 1.5;
+    overflow-wrap: anywhere;
 }
 
-/* ============================
-   CALCULATOR
-============================ */
 .calculator {
     padding: 30px;
-    background: #eabf5b;
-    border-radius: 14px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
-    border: 1px solid #f1f1f1;
+    background: var(--tarif-blue);
+    border-radius: 8px;
+    box-shadow: 8px 8px 0 var(--tarif-gold);
+    border: 1px solid rgba(234, 164, 56, 0.55);
     margin-top: 20px;
+    color: #fff;
+}
+
+.calculator h3,
+.calculator h4 {
+    color: #fff;
+}
+
+.calculator > p {
+    color: rgba(255, 255, 255, 0.78);
 }
 
 .calc-section {
     margin-bottom: 28px;
     padding-bottom: 12px;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
 }
 
 .calc-item {
@@ -137,35 +160,126 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
     cursor: pointer;
 }
 
+.calc-item input {
+    flex: 0 0 auto;
+    accent-color: var(--tarif-gold);
+}
+
 .calc-name {
+    flex: 1 1 auto;
+    min-width: 0;
     font-weight: 500;
     margin-left: 10px;
     font-size: 1rem;
+    overflow-wrap: anywhere;
 }
 
 .calc-price {
     font-weight: 700;
-    color: #097381;
+    color: var(--tarif-gold);
     font-size: 1rem;
+    white-space: nowrap;
 }
 
 .calc-total {
     margin-top: 35px;
     padding: 25px;
-    background: #f8f9fa;
-    border-radius: 12px;
+    background: var(--tarif-gold);
+    border-radius: 6px;
     text-align: center;
+    color: var(--tarif-ink);
+}
+
+.calc-total h4,
+.calc-total-amount {
+    color: var(--tarif-ink);
 }
 
 .calc-total-amount {
     font-size: 2.2rem;
     font-weight: 700;
-    color: #097381;
     margin-top: 10px;
 }
-h4 {
-    color: #333;
+
+@media (max-width: 576px) {
+    .DevisPage {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .devis-header {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .devis-header h1 {
+        font-size: 2.1rem;
+        overflow-wrap: anywhere;
+    }
+
+    .section-title {
+        font-size: 1.65rem;
+    }
+
+    .tarif-card,
+    .calculator {
+        padding: 1.25rem;
+    }
+
+    .tarif-item-header,
+    .calc-item label {
+        align-items: flex-start;
+    }
+
+    .tarif-item-header {
+        gap: 0.75rem;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .tarif-item-price,
+    .calc-price {
+        margin-left: 0;
+    }
+
+    .tarif-item-price {
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .calc-item label {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        align-items: start;
+        gap: 0.35rem 0.7rem;
+    }
+
+    .calc-item input {
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 0.25rem;
+    }
+
+    .calc-name {
+        grid-column: 2;
+        grid-row: 1;
+        margin-left: 0;
+    }
+
+    .calc-price {
+        grid-column: 2;
+        grid-row: 2;
+        margin-left: 0;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .tarif-card,
+    .calculator {
+        box-shadow: 4px 4px 0 var(--tarif-gold);
+    }
 }

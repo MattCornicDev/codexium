@@ -1,22 +1,25 @@
-/* SECTION HOME — Codexium Premium */
+/* ================================
+   SECTION HOME — Codexium Premium
+   ================================ */
 
 section.home {
   width: 100%;
   height: 100vh;
-  margin-top: -60px;
+  margin-top: -60px; /* header fixe */
   position: relative;
-  display: flex;
-  align-items: stretch;
   overflow: hidden;
+  display: flex;
 }
 
-/* Conteneur principal */
+/* ================================
+   LAYOUT PRINCIPAL
+   ================================ */
+
 .intro_sec {
   display: flex;
-  height: 100vh;
   width: 100%;
+  height: 100vh;
 }
-
 
 /* Colonne texte */
 .intro_sec .text {
@@ -37,30 +40,48 @@ section.home {
   filter: saturate(0.5);
 }
 
-/* Responsive */
+/* ================================
+   RESPONSIVE — IMAGE RETIRÉE
+   ================================ */
+
 @media (max-width: 991px) {
+
+  section.home {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+  }
+
   .intro_sec {
     flex-direction: column;
     height: auto;
   }
 
-  .intro_sec .text,
-  .intro_sec .h_bg-image {
+  /* TEXTE EN PREMIER */
+  .intro_sec .text {
+    order: 1;
     width: 100%;
+    padding: 25px 20px;
+    box-sizing: border-box;
   }
 
+  /* IMAGE RETIRÉE */
   .intro_sec .h_bg-image {
-    height: 60vh;
+    display: none;
   }
 }
 
-/* Cercle animation */
+/* ================================
+   CERCLE ANIMATION
+   ================================ */
+
 .box {
   position: relative;
   cursor: pointer;
   transition: transform 0.4s cubic-bezier(0.23,1.83,0.42,1.19);
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .box:hover {
@@ -73,7 +94,7 @@ section.home {
   border-radius: 50%;
   border: 3px solid #f1f1f1;
   padding-top: 3rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   animation:
     1s linear infinite alternate boxMagic,
     4s linear infinite spinning;
@@ -101,33 +122,110 @@ section.home {
   to { transform: rotate(360deg); }
 }
 
-/* Typo */
-.fluidz-48 {
-  font-size: 1.5rem;
+/* ================================
+   TYPOGRAPHIE
+   ================================ */
+
+.home-title,
+.intro h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  text-align: center;
 }
 
-.description {
+.fluidz-48,
+.home-animated {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.description,
+.home-description {
   font-style: italic;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  text-align: center;
 }
 
-/* Boutons */
+/* ================================
+   BOUTONS
+   ================================ */
+
+.intro_btn-action {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 .ac_btn {
-  padding: 4px 19px;
-  color: #060606; /* texte vert clair */
-  position: relative;
-  border: 2px solid #305587; /* bordure vert clair */
-  overflow: hidden;
-  transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  padding: 8px 22px;
+  color: #060606;
+  border: 2px solid #305587;
+  background: transparent;
   cursor: pointer;
-  border-radius: 0;
-  margin-right: 20px;
-  background: transparent; /* bouton transparent comme ton style */
+  transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
 }
 
-/* Hover Codexium */
 .ac_btn:hover {
-  box-shadow: 8px 8px 0px #EAA438, -8px -8px 0px #ebb057; /* ombre vert foncé */
-  color: #ffffff; /* texte blanc au hover */
-  background: #305587; /* fond vert clair au hover */
-  border-color: #EAA438; /* bordure vert foncé au hover */
+  box-shadow: 8px 8px 0px #EAA438, -8px -8px 0px #ebb057;
+  color: #ffffff;
+  background: #305587;
+  border-color: #EAA438;
+}
+
+/* ================================
+   RESPONSIVE — ESPACES
+   ================================ */
+
+@media (max-width: 991px) {
+
+  .home-title,
+  .intro h1 {
+    font-size: clamp(1.5rem, 7vw, 1.9rem);
+    margin-bottom: 2rem;
+    overflow-wrap: anywhere;
+  }
+
+  .home-animated,
+  .fluidz-48 {
+    font-size: clamp(1.05rem, 5vw, 1.3rem);
+    margin-bottom: 1rem;
+    overflow-wrap: anywhere;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    padding: 0 15px;
+  }
+
+  .intro_btn-action {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .ac_btn {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .intro_sec .text {
+    padding: 20px 14px;
+  }
+
+  .cercle {
+    width: min(60vw, 200px);
+    height: min(60vw, 200px);
+  }
+
+  .description {
+    padding: 0 5px;
+  }
 }

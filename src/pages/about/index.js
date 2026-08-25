@@ -34,7 +34,7 @@ export const About = () => {
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <div>
-              <pre>{dataabout.aboutme}</pre>
+              <pre className="about-description">{dataabout.aboutme}</pre>
             </div>
           </Col>
         </Row>
@@ -44,20 +44,18 @@ export const About = () => {
 
           </Col>
           <Col lg="7">
-            <table className="table caption-top">
-              <tbody>
-                {worktimeline.map((data, i) => {
-                  return (
-                    <tr key={i}>
-                      <th scope="row">{data.jobtitle}</th>
-                      <td>{data.where}</td>
-                      <td>{data.date}</td>
-                      <td>{data.details}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+            <div className="experience-list">
+              {worktimeline.map((data, i) => (
+                <article className="experience-card" key={i}>
+                  <div className="experience-card__topline">
+                    <h4>{data.jobtitle}</h4>
+                    <span>{data.date}</span>
+                  </div>
+                  <p className="experience-card__place">{data.where}</p>
+                  <p className="experience-card__details">{data.details}</p>
+                </article>
+              ))}
+            </div>
           </Col>
         </Row>
         <Row className=" sec_sp">
@@ -65,20 +63,18 @@ export const About = () => {
             <h3 className="color_sec py-4">Autres Expériences</h3>
           </Col>
           <Col lg="7">
-            <table className="table caption-top">
-              <tbody>
-                {worktimeline2.map((data, i) => {
-                  return (
-                    <tr key={i}>
-                      <th scope="row">{data.jobtitle}</th>
-                      <td>{data.where}</td>
-                      <td>{data.date}</td>
-                      <td>{data.details}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+            <div className="experience-list">
+              {worktimeline2.map((data, i) => (
+                <article className="experience-card" key={i}>
+                  <div className="experience-card__topline">
+                    <h4>{data.jobtitle}</h4>
+                    <span>{data.date}</span>
+                  </div>
+                  <p className="experience-card__place">{data.where}</p>
+                  <p className="experience-card__details">{data.details}</p>
+                </article>
+              ))}
+            </div>
           </Col>
         </Row>
         <Row className=" sec_sp">
@@ -86,18 +82,20 @@ export const About = () => {
             <h3 className="color_sec py-4">Diplomes</h3>
           </Col>
           <Col lg="7">
-            <table className="table caption-top">
-              <tbody>
-                {diplomes.map((data, i) => {
-                  return (
-                    <tr key={i}>
-                      <th scope="row">{data.title}</th>
-                      <td>{data.description}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+            <div className="table-responsive">
+              <table className="table caption-top">
+                <tbody>
+                  {diplomes.map((data, i) => {
+                    return (
+                      <tr key={i}>
+                        <th scope="row">{data.title}</th>
+                        <td>{data.description}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
           </Col>
         </Row>
         <Row className="sec_sp">
@@ -105,23 +103,31 @@ export const About = () => {
             <h3 className="color_sec py-4">Qualifications</h3>
           </Col>
           <Col lg="7">
-            {skills.map((data, i) => {
-              return (
-                <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
-                  <div className="progress">
+            <div className="qualifications-list">
+              {skills.map((data, i) => {
+                return (
+                  <div className="qualification-item" key={i}>
+                    <div className="qualification-header">
+                      <h4 className="progress-title">{data.name}</h4>
+                      <span className="progress-value">{data.value}%</span>
+                    </div>
                     <div
-                      className="progress-bar"
-                      style={{
-                        width: `${data.value}%`,
-                      }}
+                      className="progress"
+                      role="progressbar"
+                      aria-label={`${data.name} : ${data.value}%`}
+                      aria-valuenow={data.value}
+                      aria-valuemin="0"
+                      aria-valuemax="100"
                     >
-                      <div className="progress-value">{data.value}%</div>
+                      <div
+                        className="progress-bar"
+                        style={{ width: `${data.value}%` }}
+                      />
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </Col>
         </Row>
         <Row className="sec_sp">
