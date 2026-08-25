@@ -36,6 +36,7 @@ section.home {
   background-repeat: no-repeat;
   filter: saturate(0.5);
 }
+
 /* Responsive */
 @media (max-width: 991px) {
   .intro_sec {
