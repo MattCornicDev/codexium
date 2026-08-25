@@ -66,7 +66,7 @@ export const ContactUs = () => {
 
   return (
     <HelmetProvider>
-      <Container>
+      <Container className="contact-page">
         <Helmet>
           <meta charSet="utf-8" />
           <title>{meta.title} | Contact</title>
@@ -92,8 +92,10 @@ export const ContactUs = () => {
             </Alert>
           </Col>
           <Col lg="5" className="mb-5">
-            <h3 className="color_sec py-4">Coordonnés</h3>
-            <address>
+            <div className="contact-info">
+              <p className="contact-kicker">Parlons de votre projet</p>
+              <h3 className="color_sec">Coordonnées</h3>
+              <address>
               <strong>Envoyer un mail</strong>{" "}
               <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
                 {contactConfig.YOUR_EMAIL}
@@ -107,13 +109,15 @@ export const ContactUs = () => {
               ) : (
                 ""
               )}
-            </address>
-            <p>{contactConfig.description}</p>
+              </address>
+              <p>{contactConfig.description}</p>
+            </div>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <form onSubmit={handleSubmit} className="contact__form w-100">
               <Row>
                 <Col lg="6" className="form-group">
+                  <label className="visually-hidden" htmlFor="name">Nom</label>
                   <input
                     className="form-control"
                     id="name"
@@ -126,6 +130,7 @@ export const ContactUs = () => {
                   />
                 </Col>
                 <Col lg="6" className="form-group">
+                  <label className="visually-hidden" htmlFor="email">Email</label>
                   <input
                     className="form-control rounded-0"
                     id="email"
@@ -138,6 +143,7 @@ export const ContactUs = () => {
                   />
                 </Col>
               </Row>
+              <label className="visually-hidden" htmlFor="message">Message</label>
               <textarea
                 className="form-control rounded-0"
                 id="message"
@@ -152,7 +158,7 @@ export const ContactUs = () => {
               <Row>
                 <Col lg="12" className="form-group">
                   <button className="btn ac_btn" type="submit">
-                    {formData.loading ? "Sending..." : "Envoyer"}
+                    {formData.loading ? "Envoi en cours..." : "Envoyer le message"}
                   </button>
                 </Col>
               </Row>
