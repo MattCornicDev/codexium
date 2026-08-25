@@ -313,7 +313,7 @@ const contactConfig = {
     description: "Pour une réponse rapide et précise à vos questions. Ensemble, trouvons la solution idéale à vos besoins. Ne perdez plus de temps, contactez-moi dès maintenant ! ",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_biy0w2n",
+    YOUR_SERVICE_ID: "service_xfrhkoc",
     YOUR_TEMPLATE_ID: "template_49d0lm8",
     YOUR_USER_ID: "xd6hcsAADdsTCTB_f",
 };

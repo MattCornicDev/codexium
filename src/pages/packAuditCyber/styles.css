@@ -1,0 +1,220 @@
+:root {
+    --audit-blue: #305587;
+    --audit-gold: #EAA438;
+    --audit-ink: #17263d;
+}
+
+.audit-pack-page {
+    max-width: 1200px;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+}
+
+.audit-hero {
+    position: relative;
+    padding: 2.5rem 1rem 1rem;
+}
+
+.audit-hero h1,
+.audit-pack-page h2 {
+    color: var(--audit-blue);
+}
+
+.audit-eyebrow,
+.audit-card-label {
+    color: var(--audit-gold);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.audit-hero .lead {
+    max-width: 760px;
+    margin: 0 auto;
+    color: var(--text-color);
+    opacity: 0.78;
+    line-height: 1.7;
+}
+
+.audit-hero .t_border {
+    border-color: var(--audit-gold) !important;
+    opacity: 1;
+}
+
+.audit-btn {
+    border-radius: 0;
+    padding: 0.75rem 1.2rem;
+    font-weight: 700;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.audit-btn:hover,
+.audit-btn:focus-visible {
+    transform: translateY(-3px);
+}
+
+.audit-btn--primary {
+    border: 2px solid var(--audit-blue);
+    background: var(--audit-blue);
+    color: #fff;
+}
+
+.audit-btn--primary:hover,
+.audit-btn--primary:focus-visible {
+    border-color: var(--audit-gold);
+    background: var(--audit-gold);
+    color: var(--audit-ink);
+}
+
+.audit-btn--outline {
+    border: 2px solid var(--audit-gold);
+    color: var(--audit-blue);
+}
+
+.audit-btn--outline:hover,
+.audit-btn--outline:focus-visible {
+    background: var(--audit-gold);
+    color: var(--audit-ink);
+}
+
+.audit-card {
+    height: 100%;
+    border: 1px solid rgba(48, 85, 135, 0.2);
+    border-top: 4px solid var(--audit-blue);
+    border-radius: 8px;
+    background: color-mix(in srgb, var(--text-color) 4%, transparent);
+    color: var(--text-color);
+    box-shadow: 6px 6px 0 rgba(234, 164, 56, 0.7);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.audit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 9px 9px 0 var(--audit-gold);
+}
+
+.audit-card--featured {
+    border-top-color: var(--audit-gold);
+}
+
+.audit-card .card-body {
+    padding: 1.5rem;
+}
+
+.audit-card-label {
+    margin-bottom: 0.8rem;
+}
+
+.audit-card .card-title {
+    color: var(--audit-blue);
+    font-size: 1.3rem;
+}
+
+.audit-card .card-title span {
+    display: block;
+    margin-top: 0.35rem;
+    color: var(--audit-gold);
+    font-size: 1.05rem;
+}
+
+.audit-card ul {
+    padding-left: 1.2rem;
+    line-height: 1.8;
+}
+
+.audit-card li::marker {
+    color: var(--audit-gold);
+}
+
+.audit-card-note {
+    color: var(--audit-blue);
+}
+
+.audit-pack-page .form-label {
+    color: var(--audit-blue);
+    font-weight: 700;
+}
+
+.audit-control {
+    border: 1px solid rgba(48, 85, 135, 0.45);
+    border-radius: 0;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.audit-control:focus {
+    border-color: var(--audit-gold);
+    box-shadow: 0 0 0 3px rgba(234, 164, 56, 0.2);
+}
+
+.audit-result {
+    border-left: 4px solid var(--audit-gold);
+    background: var(--audit-blue);
+    color: #fff;
+    box-shadow: 6px 6px 0 var(--audit-gold);
+}
+
+.audit-result h4,
+.audit-result h3 {
+    color: #fff;
+}
+
+.audit-result hr {
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+.audit-result h3 {
+    color: var(--audit-gold);
+}
+
+.audit-cta {
+    margin-top: 1rem;
+    border-top: 4px solid var(--audit-gold);
+    background: var(--audit-blue);
+    color: #fff;
+    box-shadow: 8px 8px 0 var(--audit-gold);
+}
+
+.audit-cta h2,
+.audit-cta p {
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    .audit-pack-page {
+        padding-top: 5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .audit-pack-page {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .audit-hero {
+        padding-top: 1.5rem;
+    }
+
+    .audit-hero h1 {
+        font-size: 2.1rem;
+        overflow-wrap: anywhere;
+    }
+
+    .audit-hero .d-flex,
+    .audit-cta .d-flex {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .audit-btn {
+        width: 100%;
+    }
+
+    .audit-card,
+    .audit-result,
+    .audit-cta {
+        box-shadow: 4px 4px 0 var(--audit-gold);
+    }
+}

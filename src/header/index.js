@@ -22,12 +22,12 @@ const Headermain = () => {
         </Link>
 
         <nav className="desktop-nav">
-          <Link to="/">Accueil</Link>
-          <Link to="/packAuditCyber">Pack Audit Cybersécurité</Link>
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/about">À propos</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/devis">Devis</Link>
+          <Link to="/">Accueil |</Link>
+          <Link to="/packAuditCyber">Pack Audit Cybersécurité |</Link>
+          <Link to="/portfolio">Portfolio |</Link>
+          <Link to="/about">À propos |</Link>
+          <Link to="/contact">Contact |</Link>
+          <Link to="/devis">Devis |</Link>
           <Link to="/profile">CV</Link>
         </nav>
 

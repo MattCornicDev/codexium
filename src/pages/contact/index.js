@@ -19,7 +19,11 @@ export const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormdata({ loading: true });
+    setFormdata((current) => ({
+      ...current,
+      loading: true,
+      show: false,
+    }));
 
     const templateParams = {
       from_name: formData.email,
@@ -38,21 +42,27 @@ export const ContactUs = () => {
       .then(
         (result) => {
           console.log(result.text);
-          setFormdata({
+          setFormdata((current) => ({
+            ...current,
             loading: false,
             alertmessage: "Votre message a bien été envoyé, nous vous répondrons dans les plus brefs délais.",
             variant: "success",
             show: true,
-          });
+          }));
         },
         (error) => {
           console.log(error.text);
-          setFormdata({
-            alertmessage: `Echec de l'envoi ! ${error.text}`,
+          setFormdata((current) => ({
+            ...current,
+            loading: false,
+            alertmessage: `Échec de l'envoi ! ${error.text || "Veuillez réessayer."}`,
             variant: "danger",
             show: true,
+          }));
+          document.querySelector(".co_alert")?.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
           });
-          document.getElementsByClassName("co_alert")[0].scrollIntoView();
         }
       );
   };
@@ -96,19 +106,19 @@ export const ContactUs = () => {
               <p className="contact-kicker">Parlons de votre projet</p>
               <h3 className="color_sec">Coordonnées</h3>
               <address>
-              <strong>Envoyer un mail</strong>{" "}
-              <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
-                {contactConfig.YOUR_EMAIL}
-              </a>
-              <br />
-              <br />
-              {contactConfig.hasOwnProperty("YOUR_FONE") ? (
-                <p>
-                  <strong>On vous répond dans les plus brefs délais</strong> {contactConfig.YOUR_FONE}
-                </p>
-              ) : (
-                ""
-              )}
+                <strong>Envoyer un mail</strong>{" "}
+                <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
+                  {contactConfig.YOUR_EMAIL}
+                </a>
+                <br />
+                <br />
+                {contactConfig.hasOwnProperty("YOUR_FONE") ? (
+                  <p>
+                    <strong>On vous répond dans les plus brefs délais</strong> {contactConfig.YOUR_FONE}
+                  </p>
+                ) : (
+                  ""
+                )}
               </address>
               <p>{contactConfig.description}</p>
             </div>
@@ -157,7 +167,7 @@ export const ContactUs = () => {
               <br />
               <Row>
                 <Col lg="12" className="form-group">
-                  <button className="btn ac_btn" type="submit">
+                  <button className="btn ac_btn" type="submit" disabled={formData.loading}>
                     {formData.loading ? "Envoi en cours..." : "Envoyer le message"}
                   </button>
                 </Col>
