@@ -4,12 +4,18 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import MyPdfDocument from '../../components/pdfDocument/MyPdfDocument';
 import './profile.css';
+import Seo from '../../components/Seo';
 
 
 const Profile = () => {
   return (
 
     <Container className="profile-page mt-5">
+      <Seo
+        title="CV de Rarib LAAMIMAT | Développeur Full Stack | Codexium"
+        description="Consultez le parcours professionnel, les compétences et les expériences de Rarib LAAMIMAT, développeur Full Stack à Lille et Valenciennes."
+        path="/profile"
+      />
       {/* Ajouter ici le bouton de téléchargement du PDF 
       <Row className="profile-hero text-center mb-4">
         <Col>

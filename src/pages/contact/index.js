@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import * as emailjs from "emailjs-com";
 import "./style.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { meta } from "../../content_option";
+import { HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col, Alert } from "react-bootstrap";
 import { contactConfig } from "../../content_option";
+import Seo from "../../components/Seo";
 
 export const ContactUs = () => {
   const [formData, setFormdata] = useState({
@@ -77,11 +77,11 @@ export const ContactUs = () => {
   return (
     <HelmetProvider>
       <Container className="contact-page">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>{meta.title} | Contact</title>
-          <meta name="description" content={meta.description} />
-        </Helmet>
+        <Seo
+          title="Contact | Codexium — Développement web & cybersécurité"
+          description="Contactez Codexium pour discuter de votre projet web, application métier ou besoin en cybersécurité dans les Hauts-de-France."
+          path="/contact"
+        />
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
             <h1 className="display-4 mb-4">Contactez-moi</h1>

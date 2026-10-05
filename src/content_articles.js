@@ -9,7 +9,7 @@ const articles = [
     },
     {
         title: "GIT",
-        description: "Git est un système de gestion de versions décentralisé largement utilisé pour le suivi des modifications apportées à des fichiers et des projets de développement de logiciels. Il a été créé par Linus Torvalds en 2005, le même développeur qui a créé le noyau Linux. Git est open source et est devenu l'outil de contrôle de version préféré pour de nombreuses équipes de développement de logiciels, en particulier pour les projets open source. Lire d'avantage http://localhost:3001/gitCours",
+        description: "Git est un système de gestion de versions décentralisé largement utilisé pour suivre les modifications apportées aux fichiers et aux projets logiciels. Créé par Linus Torvalds en 2005, il est devenu un outil de référence pour le travail individuel et la collaboration en équipe.",
     },
     {
         title: "Node",

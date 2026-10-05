@@ -41,7 +41,7 @@ section.home {
 }
 
 /* ================================
-   RESPONSIVE — IMAGE RETIRÉE
+   RESPONSIVE
    ================================ */
 
 @media (max-width: 991px) {
@@ -65,9 +65,13 @@ section.home {
     box-sizing: border-box;
   }
 
-  /* IMAGE RETIRÉE */
   .intro_sec .h_bg-image {
-    display: none;
+    order: 2;
+    display: block;
+    width: 100%;
+    height: clamp(220px, 38vh, 360px);
+    min-height: 220px;
+    background-position: center 35%;
   }
 }
 

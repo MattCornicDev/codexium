@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./styles.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col, Form } from "react-bootstrap";
+import Seo from "../../components/Seo";
 
 export const PackAuditCyber = () => {
     const [postes, setPostes] = useState(0);
@@ -24,11 +25,11 @@ export const PackAuditCyber = () => {
         <HelmetProvider>
             <Container className="audit-pack-page">
 
-                <Helmet>
-                    <meta charSet="utf-8" />
-                    <title>Pack Audit Cyber | Audit Cybersécurité</title>
-                    <meta name="description" content="Audit cybersécurité pour TPE et collectivités." />
-                </Helmet>
+                <Seo
+                    title="Audit cybersécurité pour TPE et collectivités | Codexium"
+                    description="Découvrez les packs d’audit cybersécurité Codexium pour les TPE et collectivités des Hauts-de-France : analyse, évaluation des risques et plan d’action."
+                    path="/packAuditCyber"
+                />
 
                 {/* HERO */}
                 <Row className="audit-hero mb-5 mt-3 pt-md-3 text-center">

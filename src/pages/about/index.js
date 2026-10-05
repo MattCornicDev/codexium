@@ -1,26 +1,26 @@
 import React from "react";
 import "./style.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   dataabout,
-  meta,
   worktimeline,
   worktimeline2,
   diplomes,
   skills,
   services,
 } from "../../content_option";
+import Seo from "../../components/Seo";
 
 export const About = () => {
   return (
     <HelmetProvider>
       <Container className="About-header">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title> MCD | {meta.title}</title>
-          <meta name="description" content={meta.description} />
-        </Helmet>
+        <Seo
+          title="À propos de Rarib LAAMIMAT | Codexium"
+          description="Découvrez le parcours, les expériences et les compétences de Rarib LAAMIMAT, développeur web et consultant en cybersécurité dans les Hauts-de-France."
+          path="/about"
+        />
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
             <h1 className="display-4 mb-4">À propos de moi</h1>

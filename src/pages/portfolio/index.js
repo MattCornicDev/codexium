@@ -1,18 +1,19 @@
 import React from "react";
 import "./style.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
-import { dataportfolio, meta } from "../../content_option";
+import { dataportfolio } from "../../content_option";
+import Seo from "../../components/Seo";
 
 export const Portfolio = () => {
   return (
     <HelmetProvider>
       <Container className="About-header">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title> Portfolio | {meta.title} </title>{" "}
-          <meta name="description" content={meta.description} />
-        </Helmet>
+        <Seo
+          title="Réalisations web et applications | Portfolio Codexium"
+          description="Parcourez les projets web, applications métier et réalisations mobiles conçus par Rarib LAAMIMAT et Codexium."
+          path="/portfolio"
+        />
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
             <h1 className="display-4 mb-4"> Portfolio </h1>{" "}
@@ -23,10 +24,12 @@ export const Portfolio = () => {
           {dataportfolio.map((data, i) => {
             return (
               <div key={i} className="po_item">
-                <img src={data.img} alt="" />
+                <img src={data.img} alt={data.description} />
                 <div className="content">
                   <p>{data.description}</p>
-                  <a href={data.link}>voir le projet</a>
+                  {data.link !== "#" && (
+                    <a href={data.link}>Voir le projet</a>
+                  )}
                 </div>
               </div>
             );

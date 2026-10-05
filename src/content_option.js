@@ -15,7 +15,7 @@ const introdata = {
         fourth: "Et dans le méta les lier"
     },
     description: "Fais un métier que tu aimes et tu ne travailleras pas un seul jour de ta vie",
-    your_img_url: "https://loremflickr.com/1440/2560/software/",
+    your_img_url: "https://picsum.photos/1440/2560",
 };
 
 const dataabout = {
@@ -230,78 +230,78 @@ const services = [{
 
 const dataportfolio = [
     {
-        img: "images/logo-cabinet-dentaire.png",
+        img: "/images/logo-cabinet-dentaire.png",
         description: "Projet Cabinet Dentaire de l'Ostrevent",
         link: "https://www.cab-dent-ostrevent.fr/"
     },
     {
-        img: "../images/rarib-AppStore.jpeg",
+        img: "/images/rarib-AppStore.jpeg",
         description: "Equipe du projet Apple Foundation.",
         link: "https://twitter.com/simplonco/status/1184043337340411904",
     },
     {
-        img: "../images/site-cours.png",
+        img: "/images/site-cours.png",
         description: "Support pour les formations",
         link: "https://cours-formations.web.app/"
     },
     {
-        img: "../images/popidou.jpg",
+        img: "/images/popidou.jpg",
         description: "Présentation à l'Apple Store des Champs Elysées, de notre projet suite à la selection d'Apple.",
         link: "https://twitter.com/simplonco/status/1184043337340411904",
     },
     {
-        img: "../images/popidou-appStore.jpeg",
+        img: "/images/popidou-appStore.jpeg",
         description: "Présentation de l'application Popidou codé en Swift.",
         link: "https://twitter.com/simplonco/status/1184043337340411904",
     },
     {
-        img: "../images/aom-website.png",
+        img: "/images/aom-website.png",
         description: "Projet AOM.",
         link: "https://www.aomtechnologies.com/"
     },
     {
-        img: "../images/Tim-Cook-Simplon.jpg",
+        img: "/images/Tim-Cook-Simplon.jpg",
         description: "Tim Cook pdg d'Apple inaugurant nos locaux pour le projet Apple Foundation.",
         link: "https://twitter.com/simplonco/status/1184043337340411904",
     },
     {
-        img: "../images/projet-emat.png",
+        img: "/images/projet-emat.png",
         description: "Projet Certificat d'immatriculation en NodeJS pour un commercant automobile.",
         link: "https://github.com/MattCornicDev/eMat",
     },
     {
-        img: "../images/projet-emat2.png",
+        img: "/images/projet-emat2.png",
         description: "Projet Certificat d'immatriculation en NodeJS pour un commercant automobile.",
         link: "https://github.com/MattCornicDev/eMat",
     },
 
     {
-        img: "../images/Charlie-suez.png",
+        img: "/images/Charlie-suez.png",
         description: "Projet gestion des équipes pour Suez Smart Solution.",
         link: "#",
     },
     {
-        img: "../images/charlie.png",
+        img: "/images/charlie.png",
         description: "Projet gestion des équipes pour Suez Smart Solution.",
         link: "#",
     },
     {
-        img: "../images/charlie2.png",
+        img: "/images/charlie2.png",
         description: "Projet gestion des équipes pour Suez Smart Solution.",
         link: "#",
     },
     {
-        img: "../images/uml.png",
+        img: "/images/uml.png",
         description: "Projet gestion des équipes pour Suez diagramme d'utilisation et de Class.",
         link: "#",
     },
     {
-        img: "../images/bdd.png",
+        img: "/images/bdd.png",
         description: "Base de donnée en SQL projet Charlie Suez Smart Solution.",
         link: "#",
     },
     {
-        img: "../images/timeline-charlie.png",
+        img: "/images/timeline-charlie.png",
         description: "Timeline des evolutions des projets pour Charlie Suez Smart Solution.",
         link: "#",
     },

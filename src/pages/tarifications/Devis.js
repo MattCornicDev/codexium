@@ -3,10 +3,16 @@ import { Container, Row, Col } from "react-bootstrap";
 import tarifications from "../../content_tarifications";
 import DevisCalculator from "./DevisCalculator";
 import "../tarifications/devis.css";
+import Seo from "../../components/Seo";
 
 export const Devis = () => {
     return (
         <Container className="DevisPage mt-5">
+            <Seo
+                title="Tarifs et devis de développement web | Codexium"
+                description="Consultez les tarifs indicatifs de Codexium pour la conception, le développement d'applications web, les fonctionnalités métier et la maintenance."
+                path="/devis"
+            />
             {/* HEADER */}
             <Row>
                 <Col>
