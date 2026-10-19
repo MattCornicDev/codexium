@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import * as emailjs from "emailjs-com";
 import "./style.css";
-import { HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col, Alert } from "react-bootstrap";
 import { contactConfig } from "../../content_option";
 import Seo from "../../components/Seo";
@@ -75,7 +74,7 @@ export const ContactUs = () => {
   };
 
   return (
-    <HelmetProvider>
+    <>
       <Container className="contact-page">
         <Seo
           title="Contact | Codexium — Développement web & cybersécurité"
@@ -177,6 +176,6 @@ export const ContactUs = () => {
         </Row>
       </Container>
       <div className={formData.loading ? "loading-bar" : "d-none"}></div>
-    </HelmetProvider>
+    </>
   );
 };

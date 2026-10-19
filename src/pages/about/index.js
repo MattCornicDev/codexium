@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import { HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   dataabout,
@@ -14,7 +13,6 @@ import Seo from "../../components/Seo";
 
 export const About = () => {
   return (
-    <HelmetProvider>
       <Container className="About-header">
         <Seo
           title="À propos de Rarib LAAMIMAT | Codexium"
@@ -146,6 +144,5 @@ export const About = () => {
           </Col>
         </Row>
       </Container>
-    </HelmetProvider>
   );
 };

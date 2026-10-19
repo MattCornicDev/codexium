@@ -18,7 +18,7 @@ const Headermain = () => {
     <>
       <header className="header fixed-top">
         <Link className="brand" to="/">
-          <img src={logotext} alt="logo" />
+          <img src={logotext} alt="Codexium" />
         </Link>
 
         <nav className="desktop-nav">
@@ -27,6 +27,7 @@ const Headermain = () => {
           <Link to="/portfolio">Portfolio |</Link>
           <Link to="/about">À propos |</Link>
           <Link to="/contact">Contact |</Link>
+          <Link to="/articles">Articles |</Link>
           <Link to="/devis">Devis |</Link>
           <Link to="/profile">CV</Link>
         </nav>

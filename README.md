@@ -34,6 +34,16 @@ protection de leurs systèmes numériques.
 
 ## 🗂️ Structure du projet
 
+- `src/app` : initialisation et routes React
+- `src/pages` : pages publiques du site
+- `src/components` : composants partagés, dont les métadonnées SEO
+- `public` : ressources statiques, sitemap, robots.txt et page 404
+
+## Build et référencement
+
+`yarn build` compile le site puis pré-rend les pages publiques dans `build/` afin que leur contenu et leurs métadonnées soient présents dans le HTML livré aux moteurs de recherche. Le pré-rendu nécessite Puppeteer et son navigateur Chromium.
+
+Lorsqu’une route publique est ajoutée ou supprimée, mettez à jour la liste `routes` dans `scripts/prerender.cjs` ainsi que `public/sitemap.xml`. La page `public/404.html` est conservée au déploiement pour éviter de présenter l’accueil comme une page introuvable.
 
 ---
 
@@ -62,4 +72,3 @@ Pour toute demande commerciale, technique ou partenariat :
 **Matt Cornic — Codexium**  
 📧 contact@codexium.fr  
 🌐 https://codexium.fr
-

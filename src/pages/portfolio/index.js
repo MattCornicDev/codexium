@@ -1,13 +1,11 @@
 import React from "react";
 import "./style.css";
-import { HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio } from "../../content_option";
 import Seo from "../../components/Seo";
 
 export const Portfolio = () => {
   return (
-    <HelmetProvider>
       <Container className="About-header">
         <Seo
           title="Réalisations web et applications | Portfolio Codexium"
@@ -37,6 +35,5 @@ export const Portfolio = () => {
         </div>
 
       </Container>
-    </HelmetProvider>
   );
 };

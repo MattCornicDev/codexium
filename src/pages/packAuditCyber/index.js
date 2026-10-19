@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./styles.css";
-import { HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import Seo from "../../components/Seo";
 
@@ -22,7 +21,6 @@ export const PackAuditCyber = () => {
     const total = base + totalPostes + totalLogiciels + totalBatiments;
 
     return (
-        <HelmetProvider>
             <Container className="audit-pack-page">
 
                 <Seo
@@ -187,6 +185,5 @@ export const PackAuditCyber = () => {
                 </Row>
 
             </Container>
-        </HelmetProvider>
     );
 };

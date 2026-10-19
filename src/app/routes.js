@@ -1,16 +1,36 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import withRouter from "../hooks/withRouter"
-import { Home } from "../pages/home";
-import { Portfolio } from "../pages/portfolio";
-import { ContactUs } from "../pages/contact";
-import { About } from "../pages/about";
-import { Articles } from "../pages/articles";
+import withRouter from "../hooks/withRouter";
 import { Socialicons } from "../components/socialicons";
-import { Devis } from "../pages/tarifications/Devis";
-import { PackAuditCyber } from "../pages/packAuditCyber";
-import Profile from "../pages/profile/Profile";
+import { NotFound } from "../pages/error/NotFound";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+
+const Home = lazy(() =>
+  import("../pages/home").then((module) => ({ default: module.Home }))
+);
+const Portfolio = lazy(() =>
+  import("../pages/portfolio").then((module) => ({ default: module.Portfolio }))
+);
+const ContactUs = lazy(() =>
+  import("../pages/contact").then((module) => ({ default: module.ContactUs }))
+);
+const About = lazy(() =>
+  import("../pages/about").then((module) => ({ default: module.About }))
+);
+const Articles = lazy(() =>
+  import("../pages/articles").then((module) => ({ default: module.Articles }))
+);
+const Devis = lazy(() =>
+  import("../pages/tarifications/Devis").then((module) => ({
+    default: module.Devis,
+  }))
+);
+const PackAuditCyber = lazy(() =>
+  import("../pages/packAuditCyber").then((module) => ({
+    default: module.PackAuditCyber,
+  }))
+);
+const Profile = lazy(() => import("../pages/profile/Profile"));
 
 const AnimatedRoutes = withRouter(({ location }) => (
   <TransitionGroup>
@@ -24,7 +44,7 @@ const AnimatedRoutes = withRouter(({ location }) => (
       unmountOnExit
     >
       <Routes location={location}>
-        <Route exact path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<ContactUs />} />
@@ -32,7 +52,7 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/devis" element={<Devis />} />
         <Route path="/packAuditCyber" element={<PackAuditCyber />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="*" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </CSSTransition>
   </TransitionGroup>
@@ -41,7 +61,9 @@ const AnimatedRoutes = withRouter(({ location }) => (
 function AppRoutes() {
   return (
     <div className="s_c">
-      <AnimatedRoutes />
+      <Suspense fallback={<div role="status">Chargement de la page…</div>}>
+        <AnimatedRoutes />
+      </Suspense>
       <Socialicons />
     </div>
   );
