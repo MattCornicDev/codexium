@@ -16,11 +16,21 @@ const routes = [
 ];
 
 async function prerender() {
+  const chromium =
+    process.platform === "linux" ? require("@sparticuz/chromium") : null;
+  const launchOptions = chromium
+    ? {
+        executablePath: await chromium.executablePath(),
+        args: chromium.args,
+      }
+    : undefined;
+
   const prerenderer = new Prerenderer({
     staticDir: buildDirectory,
     renderer: new PuppeteerRenderer({
       args: ["--no-sandbox", "--disable-setuid-sandbox"],
       headless: true,
+      launchOptions,
       pageHandler: async (page, route) => {
         const canonicalUrl = `https://codexium.fr${route}`;
 
